@@ -1,0 +1,31 @@
+.welcome>h2,h1{
+    color: #2B81C2;
+}
+.welcome>h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.welcome>h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.welcome>p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #5C5C5C;
+}
+
+.welcome-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.img-section{
+    padding-left: 2%;
+}

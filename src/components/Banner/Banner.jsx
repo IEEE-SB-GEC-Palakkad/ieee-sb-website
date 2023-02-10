@@ -31,6 +31,11 @@ const Banner = () => {
         </div>
         {menu && <MobileNavbar menu={menu} setMenu={setMenu} />}
       </div>
+      <div className="welcome">
+        <h2>Welcome to</h2>
+        <h1>Our Family</h1>
+        <button>Join IEEE</button>
+      </div>
     </>
   );
 };
