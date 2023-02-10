@@ -27,3 +27,46 @@
   font-weight: 400;
   line-height: 44px;
 }
+.welcome_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 30px;
+}
+.welcome_wrapper > h1 {
+  /* font-family: "Roboto"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  /* line-height: 80px; */
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.welcome_wrapper > h2 {
+  margin-top: 30px;
+  /* font-family: "Roboto"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  /* line-height: 70px; */
+  text-align: center;
+  color: #ffffff;
+}
+.welcome_wrapper > button {
+  /* margin-top: 30px; */
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: #204379;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  background-color: #ffffff;
+
+}
+.carosel_wrapper > img{
+  width: 100%;
+}
