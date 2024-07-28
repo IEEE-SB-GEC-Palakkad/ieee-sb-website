@@ -1,12 +1,14 @@
 import React from "react";
 import { BentoCard, BentoGrid } from "../magicui/bento-grid";
 import { cn } from "@/lib/utils";
+import Heading from "../Heading";
 
 
 function GallerySection() {
   return (
-    <section className="text-black py-4">
-      <div className="container mx-auto grid md:grid-cols-[30%_30%_20%_20%] md:grid-rows-[300px_100px_240px] grid-cols-2 grid-rows-[130px_170px_100px_100px] gap-2.5 md:gap-4">
+    <section className="text-black py-4 container">
+      <Heading text="GALLERY" />
+      <div className="container mx-auto grid md:grid-cols-[25%_25%_25%_20%] md:grid-rows-[300px_100px_240px] grid-cols-2 grid-rows-[130px_170px_100px_100px] gap-2.5 md:gap-4">
         <GalleryItem imgSrc="/images/gallery/gallery_item_1.jpg" />
         <GalleryItem imgSrc="/images/gallery/gallery_item_2.jpg" />
         <GalleryItem

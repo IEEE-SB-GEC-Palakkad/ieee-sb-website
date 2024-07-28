@@ -1,13 +1,4 @@
-.achievements-header {
-    color: #2B81C2;
-    font-size: 4rem;
-    font-weight: 900;
-}
 
-.achievements {
-    padding-left: 10%;
-    padding-right: 10%;
-}
 .achievement-explore{
     width: fit-content;
 }
@@ -40,15 +31,12 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* padding-top: 5%; */
-    padding-bottom: 5%;
 }
 .achievement-contents{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 5% 1% 5% 1%;
     width: 40%;
 }
 
