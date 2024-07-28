@@ -2,7 +2,6 @@ import React from "react";
 import { BentoCard, BentoGrid } from "../magicui/bento-grid";
 import { cn } from "@/lib/utils";
 
-const arr = ["1", "2", "3", "4", "5", "6"];
 
 function GallerySection() {
   return (
@@ -27,12 +26,18 @@ function GallerySection() {
 
 function GalleryItem({ className, imgSrc }) {
   return (
-    <div className={cn("bg-red-300 rounded-lg overflow-hidden", className)}>
+    <div
+      className={cn(
+        "bg-red-300 rounded-lg overflow-hidden relative",
+        className
+      )}
+    >
       <img
         className="h-full w-full object-cover"
         src={imgSrc ?? "https://via.placeholder.com/150"}
         alt="image"
       />
+      <div className="absolute inset-0 bg-black/20"></div>
     </div>
   );
 }
