@@ -5,8 +5,8 @@ import Events from "../components/Events/Events";
 import Societies from "../components/Socities/Societies";
 import Welcome from "../components/Welcome/Welcome";
 import Upthinq from "../components/Upthinq/Upthinq";
-import Gallery from "../components/Gallery/Gallery";
 import Hero from "../components/Hero/Hero";
+import GallerySection from "../components/GallerySection/GallerySection";
 
 const HomePage = () => {
   return (
@@ -20,6 +20,7 @@ const HomePage = () => {
       <Achievements/>
       <Upthinq/>
       <Gallery/> */}
+      <GallerySection />
     </>
   );
 };
