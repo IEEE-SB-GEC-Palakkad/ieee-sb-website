@@ -21,9 +21,8 @@ const Banner = () => {
               <p>Events</p>
               <p>Achivements</p>
               <p>Societies</p>
-              <p>Upthinq</p>
               <p>Gallery</p>
-              <p>Excom</p>
+              <p>Execom</p>
               <p>Contact</p>
             </div>
             <div className="navbar_line"></div>

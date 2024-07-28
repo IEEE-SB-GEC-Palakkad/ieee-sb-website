@@ -1,0 +1,22 @@
+.hero_wrapper .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero_wrapper *{
+    font-family: "Monument Extended Regular";
+    color: #00567D;
+}
+
+.hero_wrapper button{
+    background-color: #00567D;
+    color: white;
+}
+.hero_wrapper p{
+    color: black;
+    font-family: "Montserrat";
+    text-align: justify;
+}

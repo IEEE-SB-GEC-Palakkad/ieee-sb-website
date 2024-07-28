@@ -6,18 +6,20 @@ import Societies from "../components/Socities/Societies";
 import Welcome from "../components/Welcome/Welcome";
 import Upthinq from "../components/Upthinq/Upthinq";
 import Gallery from "../components/Gallery/Gallery";
+import Hero from "../components/Hero/Hero";
 
 const HomePage = () => {
   return (
     <>
-      <Banner />
-      <Welcome/>
+      <Hero />
+      {/* <Banner /> */}
+
+      {/* <Welcome/>
       <Societies/>
       <Events/>
       <Achievements/>
       <Upthinq/>
-      <Gallery/>
-
+      <Gallery/> */}
     </>
   );
 };
