@@ -7,6 +7,7 @@ import Welcome from "../components/Welcome/Welcome";
 import Upthinq from "../components/Upthinq/Upthinq";
 import Gallery from "../components/Gallery/Gallery";
 import Hero from "../components/Hero/Hero";
+import ExecomSection from "../components/ExecomSection/ExecomSection";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       {/* <Achievements/> */}
       {/* <Upthinq/> */}
       {/* <Gallery/> */}
+      <ExecomSection />
     </>
   );
 };
