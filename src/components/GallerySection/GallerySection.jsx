@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 function GallerySection() {
   return (
-    <section className="text-black">
+    <section className="text-black py-4">
       <div className="container mx-auto grid md:grid-cols-[30%_30%_20%_20%] md:grid-rows-[300px_100px_240px] grid-cols-2 grid-rows-[130px_170px_100px_100px] gap-2.5 md:gap-4">
         <GalleryItem imgSrc="/images/gallery/gallery_item_1.jpg" />
         <GalleryItem imgSrc="/images/gallery/gallery_item_2.jpg" />
@@ -28,7 +28,7 @@ function GalleryItem({ className, imgSrc }) {
   return (
     <div
       className={cn(
-        "bg-red-300 rounded-lg overflow-hidden relative",
+        "bg-red-300 rounded-sm md:rounded-lg overflow-hidden relative",
         className
       )}
     >
