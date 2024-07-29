@@ -12,10 +12,10 @@ import Spacer from "@/components/Spacer";
 const HomePage = () => {
   return (
     <>
+      <Banner />
       <Spacer />
       <Hero />
       <Spacer />
-      {/* <Banner /> */}
       <Societies />
       <Spacer />
       <Events />
@@ -23,7 +23,6 @@ const HomePage = () => {
       <Achievements/>
       <Spacer />
       <GallerySection />
-      {/* <Welcome/> */}
       {/* <Upthinq/> */}
       {/* <Gallery/> */}
     </>
