@@ -10,7 +10,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className="banner_wrapper px-12">
+      <div className="banner_wrapper sm:px-12">
         <div className="container navbar_wrapper my-4">
           <div className="">
             <img src={logo} className="" alt="logo" />

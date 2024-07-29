@@ -14,15 +14,15 @@ const Events = () => {
       <div className="events container">
         <Heading text="EVENTS" />
         <div className="event-details hidden sm:flex">
-          <div className="event-contents">
+          <div className="event-contents w-2/3">
             <h3 className="event-name border-b-4 border-slate-600">
               {eventData[0][events].name}
             </h3>
             <p className="event-description">{eventData[0][events].details}</p>
             <div className="event-explore">
-              <button className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D]">
+              {/* <button className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D]">
                 Explore
-              </button>
+              </button> */}
             </div>
             <div className="nav-btn">
               <button onClick={() => setEvents(Math.abs(events - 1) % 3)}>
@@ -33,8 +33,8 @@ const Events = () => {
               </button>
             </div>
           </div>
-          <div className="event-image">
-            <img src={eventData[0][events].img} alt="" />
+          <div className="event-image w-1/3 flex justify-center items-center">
+            <img src={eventData[0][events].img} className="w-full" alt="" />
           </div>
         </div>
 

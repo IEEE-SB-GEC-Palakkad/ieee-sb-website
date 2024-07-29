@@ -13,8 +13,8 @@ const Achievements = () => {
     <>
       <div className="events container">
         <div className="event-details hidden sm:flex">
-          <div className="event-image border-2 shadow-2xl h-96 w-72 flex justify-center items-center">
-            <img src={AchievementsData[0][Achievements].img} className="w-full" alt="" />
+          <div className="event-image border-2 shadow-2xl h-96 w-72 flex justify-center items-center rounded-xl">
+            <img src={AchievementsData[0][Achievements].img} className="w-full"  alt="" />
           </div>
           <div className="event-contents flex justify-center items-end">
             <Heading text="ACHIEVEMENTS" className="sm:!text-right w-full" />
