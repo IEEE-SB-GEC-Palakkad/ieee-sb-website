@@ -28,7 +28,7 @@ const HomePage = () => {
           <Spacer/>
           <InfoSection />
           {/* <Upthinq/> */}
-          {/* <Gallery/> */}
+          {/* <Gallery/> */}  
       </div>
     </>
   );
