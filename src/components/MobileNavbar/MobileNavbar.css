@@ -3,6 +3,7 @@
   height: 100vh;
   background-color: #035B98;
   padding-top: 10px;
+  z-index: 100;
 }
 .mobile_nav_header {
   display: flex;
@@ -19,7 +20,7 @@
   justify-content: center;
   align-items: center;
 }
-.mobile_nav_links > p {
+.mobile_nav_links > a {
   cursor: pointer;
   font-size: 22px;
   font-family: "Montserrat", sans-serif;

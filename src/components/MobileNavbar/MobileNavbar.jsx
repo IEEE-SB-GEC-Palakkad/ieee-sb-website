@@ -2,6 +2,7 @@ import { useSpring, animated } from "@react-spring/web";
 import React from "react";
 
 import "../MobileNavbar/MobileNavbar.css";
+import { Link } from "react-router-dom";
 
 const MobileNavbar = ({ menu, setMenu }) => {
   const MenuFade = useSpring({
@@ -20,13 +21,27 @@ const MobileNavbar = ({ menu, setMenu }) => {
           <i onClick={() => setMenu(!menu)} className="bi bi-x x_icon"></i>
         </div>
         <div className="mobile_nav_links">
-          <p>Home</p>
-          <p>Events</p>
-          <p>Achivements</p>
-          <p>Societies</p>
-          <p>Gallery</p>
-          <p>Execom</p>
-          <p>Contact</p>
+          <Link onClick={() => setMenu(false)} to="/">
+            Home
+          </Link>
+          <a onClick={() => setMenu(false)} href="/#events">
+            Events
+          </a>
+          <a onClick={() => setMenu(false)} href="/#achievements">
+            Achivements
+          </a>
+          <a onClick={() => setMenu(false)} href="/#society">
+            Societies
+          </a>
+          <a onClick={() => setMenu(false)} href="/#gallery">
+            Gallery
+          </a>
+          <a onClick={() => setMenu(false)} href="/#execom">
+            Execom
+          </a>
+          <a onClick={() => setMenu(false)} href="/#contact">
+            Contact
+          </a>
         </div>
       </animated.div>
     </>

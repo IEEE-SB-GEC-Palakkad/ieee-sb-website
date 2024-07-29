@@ -14,7 +14,7 @@ const Banner = () => {
       <div className="banner_wrapper sm:px-12">
         <div className="container navbar_wrapper my-4">
           <Link to="/" className="">
-            <img src={logo} className="" alt="logo" />
+            <img src={logo} className="w-36 md:w-48 lg:w-56" alt="logo" />
           </Link>
           <div className="navbar_links_wrapper">
             <div className="navbar_links">
