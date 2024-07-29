@@ -1,26 +1,26 @@
 import React from "react";
-import { BentoCard, BentoGrid } from "../magicui/bento-grid";
 import { cn } from "@/lib/utils";
-import Heading from "../Heading";
-
+import SectionHeading from "../SectionHeading";
 
 function GallerySection() {
   return (
-    <section className="text-black py-4 container">
-      <Heading text="GALLERY" />
-      <div className="container mx-auto grid md:grid-cols-[25%_25%_25%_20%] md:grid-rows-[300px_100px_240px] grid-cols-2 grid-rows-[130px_170px_100px_100px] gap-2.5 md:gap-4">
-        <GalleryItem imgSrc="/images/gallery/gallery_item_1.jpg" />
-        <GalleryItem imgSrc="/images/gallery/gallery_item_2.jpg" />
-        <GalleryItem
-          imgSrc="/images/gallery/gallery_item_3.jpg"
-          className="col-span-2 md:row-span-2"
-        />
-        <GalleryItem
-          imgSrc="/images/gallery/gallery_item_4.jpg"
-          className="md:col-span-2 row-span-2"
-        />
-        <GalleryItem imgSrc="/images/gallery/gallery_item_5.jpg" />
-        <GalleryItem imgSrc="/images/gallery/gallery_item_6.jpg" />
+    <section className="text-black py-4">
+      <div className="container mx-auto">
+        <SectionHeading>Gallery</SectionHeading>
+        <div className="grid md:grid-cols-[30%_30%_20%_20%] md:grid-rows-[300px_100px_240px] grid-cols-2 grid-rows-[130px_170px_100px_100px] gap-2.5 md:gap-4">
+          <GalleryItem imgSrc="/images/gallery/gallery_item_1.jpg" />
+          <GalleryItem imgSrc="/images/gallery/gallery_item_2.jpg" />
+          <GalleryItem
+            imgSrc="/images/gallery/gallery_item_3.jpg"
+            className="col-span-2 md:row-span-2"
+          />
+          <GalleryItem
+            imgSrc="/images/gallery/gallery_item_4.jpg"
+            className="md:col-span-2 row-span-2"
+          />
+          <GalleryItem imgSrc="/images/gallery/gallery_item_5.jpg" />
+          <GalleryItem imgSrc="/images/gallery/gallery_item_6.jpg" />
+        </div>
       </div>
     </section>
   );

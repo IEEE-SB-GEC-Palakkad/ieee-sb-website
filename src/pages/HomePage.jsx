@@ -7,7 +7,9 @@ import Welcome from "../components/Welcome/Welcome";
 import Upthinq from "../components/Upthinq/Upthinq";
 import Hero from "../components/Hero/Hero";
 import GallerySection from "../components/GallerySection/GallerySection";
+import InfoSection from "@/components/InfoSection/InfoSection";
 import Spacer from "@/components/Spacer";
+
 
 const HomePage = () => {
   return (
@@ -23,6 +25,7 @@ const HomePage = () => {
           <Achievements />
           <Spacer />
           <GallerySection />
+          <InfoSection />
           {/* <Upthinq/> */}
           {/* <Gallery/> */}
       </div>
