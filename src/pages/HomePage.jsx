@@ -25,6 +25,7 @@ const HomePage = () => {
           <Achievements />
           <Spacer />
           <GallerySection />
+          <Spacer/>
           <InfoSection />
           {/* <Upthinq/> */}
           {/* <Gallery/> */}
