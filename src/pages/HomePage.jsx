@@ -7,6 +7,7 @@ import Welcome from "../components/Welcome/Welcome";
 import Upthinq from "../components/Upthinq/Upthinq";
 import Hero from "../components/Hero/Hero";
 import GallerySection from "../components/GallerySection/GallerySection";
+import InfoSection from "@/components/InfoSection/InfoSection";
 
 const HomePage = () => {
   return (
@@ -18,8 +19,9 @@ const HomePage = () => {
       {/* <Societies/> */}
       {/* <Events/> */}
       {/* <Achievements/> */}
-      {/* <Upthinq/> */}
+      <Upthinq />
       {/* <Gallery/> */}
+      <InfoSection />
     </>
   );
 };

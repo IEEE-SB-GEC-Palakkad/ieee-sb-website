@@ -57,6 +57,16 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundImage: {
+        "button-gradient": "linear-gradient(75deg, #2C84C5, #1B1F51)",
+      },
+      boxShadow: {
+        "form-card": "0px 9px 48px  rgba(0, 0, 0, 0.25)",
+      },
+
+      fontFamily: {
+        monument: ['Monument Extended', 'Montserrat', 'sans-serif'],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
