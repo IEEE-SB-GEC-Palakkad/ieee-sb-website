@@ -8,20 +8,27 @@ import Upthinq from "../components/Upthinq/Upthinq";
 import Hero from "../components/Hero/Hero";
 import GallerySection from "../components/GallerySection/GallerySection";
 import InfoSection from "@/components/InfoSection/InfoSection";
+import Spacer from "@/components/Spacer";
+
 
 const HomePage = () => {
   return (
     <>
-      <Hero />
-      {/* <Banner /> */}
-      <GallerySection />
-      {/* <Welcome/> */}
-      {/* <Societies/> */}
-      {/* <Events/> */}
-      {/* <Achievements/> */}
-      <Upthinq />
-      {/* <Gallery/> */}
-      <InfoSection />
+      <Banner />
+      <div className="sm:container sm:px-20 flex flex-col justify-center items-start">
+          <Hero />
+          <Spacer />
+          <Societies />
+          <Spacer />
+          <Events />
+          <Spacer />
+          <Achievements />
+          <Spacer />
+          <GallerySection />
+          <InfoSection />
+          {/* <Upthinq/> */}
+          {/* <Gallery/> */}
+      </div>
     </>
   );
 };
