@@ -62,6 +62,7 @@ module.exports = {
       },
       boxShadow: {
         "form-card": "0px 9px 48px  rgba(0, 0, 0, 0.25)",
+        "execom-card": "0px 17px 94px 0px rgba(0,0,0,0.2)"
       },
 
       fontFamily: {

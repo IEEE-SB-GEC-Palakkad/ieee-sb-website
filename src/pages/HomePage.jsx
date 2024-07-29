@@ -6,6 +6,7 @@ import Societies from "../components/Socities/Societies";
 import Welcome from "../components/Welcome/Welcome";
 import Upthinq from "../components/Upthinq/Upthinq";
 import Hero from "../components/Hero/Hero";
+import ExecomSection from "../components/ExecomSection/ExecomSection";
 import GallerySection from "../components/GallerySection/GallerySection";
 import InfoSection from "@/components/InfoSection/InfoSection";
 import Spacer from "@/components/Spacer";
@@ -25,6 +26,8 @@ const HomePage = () => {
           <Achievements />
           <Spacer />
           <GallerySection />
+          <Spacer/>
+          <ExecomSection />
           <Spacer/>
           <InfoSection />
           {/* <Upthinq/> */}
