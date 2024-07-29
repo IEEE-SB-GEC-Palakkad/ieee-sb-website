@@ -6,13 +6,14 @@ const Hero = () => {
       <div className="hero_wrapper">
         <div className="container p-10">
           <div className="column md:w-1/3 flex flex-col justify-center items-center sm:items-start">
-            <h1 className="text-3xl hero_h1 sm:text-4xl">
-              IEEE SB
-            </h1>
+            <h1 className="text-3xl hero_h1 sm:text-4xl">IEEE SB</h1>
             <h2 className="text-xl hero_h2 sm:text-2xl">GEC PALAKKAD</h2>
-            <button className="btn my-3 px-4 rounded-full shadow-md hover:text-white">
+            <a
+              href="https://ieee.org"
+              className="btn my-3 px-4 rounded-full shadow-md hover:text-white"
+            >
               Join IEEE
-            </button>
+            </a>
           </div>
           <div className="column md:w-2/3">
             <p>

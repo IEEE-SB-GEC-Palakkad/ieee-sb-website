@@ -5,9 +5,9 @@ import Heading from "../Heading";
 
 function GallerySection() {
   return (
-    <section className="text-black py-4">
+    <section id="gallery" className="text-black py-4">
       <div className="container mx-auto">
-        <Heading text="GALLERY"/>
+        <Heading text="GALLERY" />
         <div className="grid md:grid-cols-[30%_30%_20%_20%] md:grid-rows-[300px_100px_240px] grid-cols-2 grid-rows-[130px_170px_100px_100px] gap-2.5 md:gap-4">
           <GalleryItem imgSrc="/images/gallery/gallery_item_1.jpg" />
           <GalleryItem imgSrc="/images/gallery/gallery_item_2.jpg" />

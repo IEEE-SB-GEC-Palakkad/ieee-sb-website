@@ -18,7 +18,7 @@ const CustomInput = ({ ...props }) => {
   return (
     <input
       {...props}
-      className="bg-white border-b-[3px] border-[#757575] placeholder:tracking-wider font-semibold text-xl placeholder:text-[#757575] py-2 focus:outline-none focus-visible:outline-1 focus:border-[#2C84C5]"
+      className="bg-white border-b-[3px] border-[#757575] placeholder:tracking-wider font-semibold text-lg md:text-xl placeholder:text-[#757575] py-2 focus:outline-none focus-visible:outline-1 focus:border-[#2C84C5]"
     />
   );
 };

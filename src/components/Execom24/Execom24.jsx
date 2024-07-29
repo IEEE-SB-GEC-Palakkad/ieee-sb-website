@@ -13,24 +13,60 @@ import ias from "../../assets/images/exe_ias.jpeg"
 const Execom24 = () => {
 
     return (
-        <>
+      <>
         <div className="container">
-            <Heading text="EXECOM'24" />
-            <div className="flex flex-wrap flex-row justify-between items-center">
-                <img src={exe1} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
-                <img src={exe2} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
-                <img src={exe3} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
+          <Heading text="EXECOM'24" />
+          <div className="flex flex-wrap flex-row justify-between items-center">
+            <img
+              src={exe1}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
+            <img
+              src={exe2}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
+            <img
+              src={exe3}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
 
-                <img src={cs} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
-                <img src={wie} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
-                <img src={sight} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
-                <img src={com} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
-                <img src={teams} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
-                <img src={ias} alt="execom24" className="w-1/4 m-2 rounded-lg shadow-lg" />
-            </div>
+            <img
+              src={cs}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
+            <img
+              src={wie}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
+            <img
+              src={sight}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
+            <img
+              src={com}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
+            <img
+              src={teams}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
+            <img
+              src={ias}
+              alt="execom24"
+              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+            />
+          </div>
         </div>
-        </>
-    )
+      </>
+    );
 
 }
 

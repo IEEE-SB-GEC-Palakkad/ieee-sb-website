@@ -11,7 +11,7 @@ const Events = () => {
 
   return (
     <>
-      <div className="events container">
+      <div id="events" className="events container">
         <Heading text="EVENTS" />
         <div className="event-details hidden sm:flex">
           <div className="event-contents w-2/3">
@@ -39,11 +39,9 @@ const Events = () => {
         </div>
 
         <div className="event-list-mobile flex flex-row flex-wrap justify-center items-center sm:hidden">
-          {
-            eventData[0].map((event, index) => (
-              <EventCard key={index} image={event.img} name={event.name} />
-            ))
-          }
+          {eventData[0].map((event, index) => (
+            <EventCard key={index} image={event.img} name={event.name} />
+          ))}
         </div>
       </div>
     </>
