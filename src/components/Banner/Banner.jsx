@@ -10,10 +10,10 @@ const Banner = () => {
 
   return (
     <>
-      <div className="banner_wrapper">
-        <div className="container navbar_wrapper">
-          <div>
-            <img src={logo} alt="logo" />
+      <div className="banner_wrapper sm:px-12">
+        <div className="container navbar_wrapper my-4">
+          <div className="">
+            <img src={logo} className="" alt="logo" />
           </div>
           <div className="navbar_links_wrapper">
             <div className="navbar_links">
@@ -30,18 +30,6 @@ const Banner = () => {
           <i onClick={() => setMenu(true)} className="bi bi-list"></i>
         </div>
 
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 carosel_wrapper">
-              <img src={caroselImg} alt="carosel" />
-            </div>
-            <div className="col-lg-6 welcome_wrapper">
-              <h2>Welcome to</h2>
-              <h1>Our Family</h1>
-              <button>Join IEEE</button>
-            </div>
-          </div>
-        </div>
 
         {menu && <MobileNavbar menu={menu} setMenu={setMenu} />}
       </div>

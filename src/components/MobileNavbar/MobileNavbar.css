@@ -1,7 +1,7 @@
 .movile_navbar_wrapper {
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: #035B98;
   padding-top: 10px;
 }
 .mobile_nav_header {
@@ -42,7 +42,7 @@
   /* line-height: 80px; */
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #035B98;
 }
 .welcome_wrapper > h2 {
   margin-top: 30px;
@@ -52,7 +52,7 @@
   font-size: 30px;
   /* line-height: 70px; */
   text-align: center;
-  color: #ffffff;
+  color: #035B98;
 }
 .welcome_wrapper > button {
   /* margin-top: 30px; */
@@ -64,7 +64,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
-  background-color: #ffffff;
+  background-color: #035B98;
 
 }
 .carosel_wrapper > img{
