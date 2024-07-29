@@ -22,7 +22,7 @@ const HomePage = () => {
           <Societies />
           <Spacer />
           <Events />
-          <Spacer />
+          {/* <Spacer /> */}
           {/* <Achievements /> */}
           <Spacer />
           <GallerySection />
