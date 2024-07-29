@@ -19,7 +19,7 @@ const ExecomSection = () => {
 const ExecomBox = ({ year }) => {
   return (
     <div className="w-[43%] md:w-[27%] aspect-[0.95/1] shadow-execom-card flex items-center justify-center">
-      <h3 className="text-[#595959] font-bold text-xl sm:text-4xl text-center">
+      <h3 className="text-[#595959] font-bold text-[20px] md:text-xl sm:text-4xl text-center">
         Execom
         <br />
         {year ?? "Nan"}
