@@ -13,18 +13,19 @@ const HomePage = () => {
   return (
     <>
       <Banner />
-      <Spacer />
-      <Hero />
-      <Spacer />
-      <Societies />
-      <Spacer />
-      <Events />
-      <Spacer />
-      <Achievements/>
-      <Spacer />
-      <GallerySection />
-      {/* <Upthinq/> */}
-      {/* <Gallery/> */}
+      <div className="sm:container sm:px-20 flex flex-col justify-center items-start">
+          <Hero />
+          <Spacer />
+          <Societies />
+          <Spacer />
+          <Events />
+          <Spacer />
+          <Achievements />
+          <Spacer />
+          <GallerySection />
+          {/* <Upthinq/> */}
+          {/* <Gallery/> */}
+      </div>
     </>
   );
 };

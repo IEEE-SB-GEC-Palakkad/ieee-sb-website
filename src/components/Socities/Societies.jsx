@@ -17,7 +17,7 @@ const Societies = () => {
             <Heading text="SOCIETIES" />
         </div>
 
-        <div className="socities-list flex flex-wrap flex-row justify-between items-center">
+        <div className="socities-list flex flex-wrap flex-row justify-center items-center">
             <SocietyCard image={cs} name="Computer Society" />
             <SocietyCard image={com} name="Communications Society" />
             <SocietyCard image={ias} name="IAS Society" />
