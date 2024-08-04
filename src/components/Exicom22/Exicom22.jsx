@@ -15,17 +15,17 @@ const Execom22 = () => {
             <img
               src={sb22}
               alt="execom22"
-              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+              className="w-full md:w-1/2 m-2 rounded-lg shadow-lg"
             />
             <img
               src={cs_ias22}
               alt="execom22"
-              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+              className="w-full md:w-1/2 m-2 rounded-lg shadow-lg"
             />
             <img
               src={com_wig22}
               alt="execom22"
-              className="w-full md:w-1/4 m-2 rounded-lg shadow-lg"
+              className="w-full md:w-1/2 m-2 rounded-lg shadow-lg"
             />
           </div>
         </div>
