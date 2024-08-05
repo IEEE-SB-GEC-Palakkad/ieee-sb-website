@@ -8,17 +8,17 @@
         {
             "name": "Greeshma",
             "details": "IEEE IA/IE/PELS Jt. Chapter Kerala Student Leadership Team 2024 - Designer\nIEEE COMPUTE - Graphics Designer",
-            "img": "/src/assets/images/greeshma.jpg"
+            "img": "/src/assets/images/greeshma.png"
         },
         {
             "name": "Varsha Prasad",
             "details": "IEEE Kerala Section Intern\nIEEE SSCS Kerala Chapter - Content Lead",
-            "img": "/src/assets/images/varsha.jpg"
+            "img": "/src/assets/images/varsha.png"
         },
         {
             "name": "Devika P Dinesh ",
             "details": "IEEE COMPUTE - Graphic Designer",
-            "img": "/src/assets/images/devika.jpg"
+            "img": "/src/assets/images/devika.png"
         }
     ]
 }
