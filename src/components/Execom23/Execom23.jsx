@@ -11,7 +11,7 @@ const Execom23 = () => {
         <Banner />
         <div className="container">
           <Heading text="EXECOM'23" />
-          <div className="flex flex-wrap flex-row justify-between items-center">
+          <div className="flex flex-wrap flex-row justify-center items-center">
             <img
               src={sb23}
               alt="execom23"
