@@ -8,6 +8,7 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    environment: AutoPush
 
     steps:
     - name: Checkout GitHub Repository
@@ -22,9 +23,9 @@ jobs:
       env:
         GITLAB_ACCESS_TOKEN: ${{ secrets.GITLAB_ACCESS_TOKEN }}
       run: |
-        git clone https://oauth2:$GITLAB_ACCESS_TOKEN@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
+        git clone https://oauth2:${{ secrets.GITLAB_ACCESS_TOKEN }}@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
         cd ieee-sb-gec-palakkad
-        git remote set-url origin https://oauth2:$GITLAB_ACCESS_TOKEN@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
+        git remote set-url origin https://oauth2:${{ secrets.GITLAB_ACCESS_TOKEN }}@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
 
     - name: Sync GitHub Repository to GitLab Repository
       env:
@@ -32,5 +33,5 @@ jobs:
       run: |
         git clone https://github.com/IEEE-SB-GEC-Palakkad/ieee-sb-website.git
         cd ieee-sb-website
-        git remote add gitlab https://oauth2:$GITLAB_ACCESS_TOKEN@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
+        git remote add gitlab https://oauth2:${{ secrets.GITLAB_ACCESS_TOKEN }}@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
         git push gitlab main:stable --force
