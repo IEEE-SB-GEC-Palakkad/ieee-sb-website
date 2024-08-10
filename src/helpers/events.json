@@ -1,0 +1,19 @@
+{
+    "0": [
+        {
+            "name": "Exelsior",
+            "details": "Excelsior, IEEE SB GEC Palakkad's flagship technical event, is a vibrant three-day gathering, at Government Engineering College Palakkad. The event featured an impressive lineup of activities, including three specialized workshops, two technical talks, a non-technical talk, an ice-breaking session, an interactive session, and a mesmerizing magic show. With 52 enthusiastic delegates in attendance, Excelsior'23 provided a platform for learning, networking, and personal growth. Highlights included an inaugural address by esteemed guests, insightful sessions on Web3 by Mr. Mirzad Makhdoom, hands-on workshops on React, Arduino, and AutoCAD, a mentalism show by Mr. Sravan Sudhakaran, and a valuable non-technical talk on abroad education by Ms. Umadevi Ajayakumar. The event culminated with a session on internship and placement opportunities by Mr. Shone Jose, leaving participants with invaluable knowledge and connections.",
+            "img": "images/1.png"
+        },
+        {
+            "name": "Matrix",
+            "details": "'MATRIX' hackathon, organized by IEEE SB GEC Palakkad under the Collaborative Research and Learning Platform (CORaL) in association with IEEE CS SBC GEC Palakkad, was a resounding success. Held on 22nd and 23rd March 2023, the event attracted participants from diverse backgrounds. The hackathon's central theme was Sustainability, challenging teams to develop innovative, feasible, and effective solutions within a 24-hour timeframe. Participants collaborated to create working prototypes that addressed real-world sustainability issues, showcasing their ingenuity and dedication.",
+            "img": "images/event_2.png"
+        },
+        {
+            "name": "Upscale",
+            "details": "Upscale is the flagship event conducted by IEEE SB GEC Palakkad, focusing on the exposure of the participants to different dimensions of entrepreneurship and start-up ideas. Shaping young minds to become efficient and professional entrepreneurs through a week long program.",
+            "img": "images/upscale.png"
+        }
+    ]
+}
