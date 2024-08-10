@@ -25,6 +25,7 @@ const Banner = () => {
               <a href="/#gallery">Gallery</a>
               <a href="/#execom">Execom</a>
               <a href="/#contact">Contact</a>
+              <a href="/blog">Blog</a>
             </div>
             <div className="navbar_line"></div>
           </div>
