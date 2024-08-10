@@ -4,7 +4,7 @@ const AchievementCard = ({ image, name }) => {
       <img
         src={image}
         alt={name}
-        className="w-32 h-32 max-w-full max-h-full object-cover"
+        className="max-w-full max-h-full rounded-md object-cover"
       />
       <h3 className="text-center text-sm font-semibold text-gray-600 rotated-text">
         {name}
