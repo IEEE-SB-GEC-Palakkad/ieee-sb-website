@@ -32,9 +32,9 @@ const Achievements = () => {
             <h3 className="event-name border-b-4 border-slate-600 float-none sm:!text-right ">
               {AchievementsData?.[0]?.[achivementIndex]?.name}
             </h3>
-            <p className="event-description text-right" style={{ color: '#000000' }} >
+            <p className="event-description text-right"  >
               {AchievementsData?.[0]?.[achivementIndex]?.details.split('|').map((line, index) => (
-             <span key={index}>
+             <span key={index} style={{ color: '#000000' }}>
                 {line}
              <br />
             </span>
