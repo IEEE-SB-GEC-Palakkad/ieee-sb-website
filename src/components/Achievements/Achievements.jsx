@@ -33,8 +33,14 @@ const Achievements = () => {
               {AchievementsData?.[0]?.[achivementIndex]?.name}
             </h3>
             <p className="event-description text-right">
-              {AchievementsData?.[0]?.[achivementIndex]?.details}
+              {AchievementsData?.[0]?.[achivementIndex]?.details.split('|').map((line, index) => (
+             <span key={index}>
+                {line}
+             <br />
+            </span>
+              ))}
             </p>
+
             <div className="event-explore">
               <button className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D]">
                 Explore
