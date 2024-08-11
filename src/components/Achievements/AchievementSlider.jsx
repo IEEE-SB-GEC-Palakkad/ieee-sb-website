@@ -1,7 +1,9 @@
-import React from "react";
 import React, { useState, useEffect } from 'react';
 import "./Achievements.css";
 import AchievementsData from "../../helpers/Achievements.json";
+
+
+
 
 
 
