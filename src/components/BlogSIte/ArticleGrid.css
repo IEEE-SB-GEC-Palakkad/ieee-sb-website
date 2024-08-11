@@ -294,12 +294,12 @@ button:hover .button-text {
   padding: 2px 4px;
   font-size: 12px;
   font-weight: bold;
-  display: flex; /* Use flexbox to center content */
-  align-items: center; /* Vertically centers the text */
-  justify-content: center; /* Horizontally centers the text */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   cursor: pointer;
   max-width: 75px;
-  height: 40px; /* Explicit height to assist with vertical centering */
+  height: 40px; 
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 5px;
   text-align: center; 
