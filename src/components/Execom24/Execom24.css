@@ -34,7 +34,7 @@
   }
   
   .execom-member:hover {
-    box-shadow: 0 0 10px rgba(208, 23, 23, 0.5);
+    box-shadow: 0 0 10px #007bff;
   }
   
   .execom-image {
