@@ -1,0 +1,37 @@
+name: Sync to GitLab
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    environment: AutoPush
+
+    steps:
+    - name: Checkout GitHub Repository
+      uses: actions/checkout@v3
+
+    - name: Install Git
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y git
+
+    - name: Clone GitLab Repository
+      env:
+        GITLAB_ACCESS_TOKEN: ${{ secrets.GITLAB_ACCESS_TOKEN }}
+      run: |
+        git clone https://oauth2:${{ secrets.GITLAB_ACCESS_TOKEN }}@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
+        cd ieee-sb-gec-palakkad
+        git remote set-url origin https://oauth2:${{ secrets.GITLAB_ACCESS_TOKEN }}@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
+
+    - name: Sync GitHub Repository to GitLab Repository
+      env:
+        GITLAB_ACCESS_TOKEN: ${{ secrets.GITLAB_ACCESS_TOKEN }}
+      run: |
+        git clone https://github.com/IEEE-SB-GEC-Palakkad/ieee-sb-website.git
+        cd ieee-sb-website
+        git remote add gitlab https://oauth2:${{ secrets.GITLAB_ACCESS_TOKEN }}@gitlab.com/anima-regem/ieee-sb-gec-palakkad.git
+        git push gitlab main:stable --force

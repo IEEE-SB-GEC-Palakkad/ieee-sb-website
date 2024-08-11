@@ -1,0 +1,150 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .execom-section {
+    margin-bottom: 40px;
+  }
+  
+  .execom-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .execom-members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .execom-member {
+    width: 15vw;
+    height: 20vw;
+    border-radius: 15px;
+    transition: .5s;
+    padding: 12px;
+    margin: 10px;
+    background:linear-gradient(rgba(84, 79, 108, 0.5),rgb(219, 232, 248,0.5));
+    text-align: center;
+  }
+  
+  .execom-member:hover {
+    box-shadow: 0 0 10px #007bff;
+  }
+  
+  .execom-image {
+    position: relative;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .execom-person {
+    height: 90%;
+    width: auto;
+    
+    border-radius: 15px;
+    transition: .5s;
+  }
+  
+  .execom-text-container {
+    height: 20%;
+    margin-top: 3%;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .execom-name {
+    color: black;
+    font-weight: 700;
+    font-size: 1.1em;
+    font-family: sans-serif;
+  }
+  
+  .execom-position {
+    color: black;
+    font-family: sans-serif;
+  }
+  
+  .execom-link-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .execom-social-link img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .execom-member {
+      width: 45%;
+      height: auto;
+      font-size: 4vw;
+      margin-bottom: 20px;
+    }
+  
+    .execom-image {
+      height: 30vw;
+    }
+  
+    .execom-person {
+      height: 100%;
+      width: auto;
+    }
+  
+    .execom-text-container {
+      height: auto;
+      margin-top: 10px;
+      font-size: 0.7em;
+    }
+  
+    .execom-name {
+      font-size: 1em;
+    }
+  
+    .execom-position {
+      font-size: 0.9em;
+    }
+  
+    .execom-social-link img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .execom-member {
+      width: 90%;
+    }
+  
+    .execom-image {
+      height: 50vw;
+    }
+  }
+
+  .execom-sections {
+    margin-top: 2rem;
+  }
+  
+  .section-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;  
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
