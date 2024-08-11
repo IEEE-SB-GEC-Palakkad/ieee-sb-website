@@ -25,7 +25,6 @@ const HomePage = () => {
           <Events />
           {/* <Spacer /> */}
            <Achievements /> 
-           <AchievementsSlider/>
           <Spacer />
           <GallerySection />
           <Spacer/>
