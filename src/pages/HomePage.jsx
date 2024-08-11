@@ -23,7 +23,11 @@ const HomePage = () => {
           <Spacer />
           <Events />
           {/* <Spacer /> */}
+<<<<<<< HEAD
           {/* <Achievements /> */}
+=======
+           <Achievements /> 
+>>>>>>> origin/experimental
           <Spacer />
           <GallerySection />
           <Spacer/>

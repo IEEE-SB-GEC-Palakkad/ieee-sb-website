@@ -34,7 +34,11 @@
   }
   
   .execom-member:hover {
+<<<<<<< HEAD
     box-shadow: 0 0 10px #035B98;
+=======
+    box-shadow: 0 0 10px #007bff;
+>>>>>>> origin/experimental
   }
   
   .execom-image {
@@ -147,4 +151,8 @@
   
   section {
     margin-bottom: 3rem;
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> origin/experimental

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
@@ -11,6 +12,8 @@
   font-family: "Montserrat", sans-serif;
   color: beige;
 }
+=======
+>>>>>>> origin/experimental
 body,
 h1,
 h2,
@@ -45,12 +48,16 @@ a {
   padding: 20px;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> origin/experimental
 }
 
 .main-article h1 {
   font-size: 24px;
   margin-bottom: 10px;
+<<<<<<< HEAD
   color: #333;
   font-weight: 700;
    text-align: center;
@@ -58,6 +65,10 @@ a {
 
 
 
+=======
+}
+
+>>>>>>> origin/experimental
 .main-article p.date,
 .main-article p.read-time {
   font-size: 14px;
@@ -125,9 +136,12 @@ a {
 .sub-article h2 {
   font-size: 20px;
   margin-bottom: 5px;
+<<<<<<< HEAD
   align-items: center;
   font-weight: 500;
   color: #0f0b0b;
+=======
+>>>>>>> origin/experimental
 }
 
 .sub-article p.date,
@@ -139,10 +153,13 @@ a {
   align-items: flex-start;
 }
 
+<<<<<<< HEAD
 .desc p {
   color: #333;
 }
 
+=======
+>>>>>>> origin/experimental
 .sub-article .read-more {
   display: inline-block;
   padding: 8px 12px;
@@ -264,7 +281,11 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 2.85rem;
+<<<<<<< HEAD
   color:#035B98 ;
+=======
+  color: rgb(43, 124, 231);
+>>>>>>> origin/experimental
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -290,8 +311,13 @@ button:hover .button-text {
   margin-top: auto;
 }
 .category-box {
+<<<<<<< HEAD
   background-color: #e4f1fe;
   color:#0f0b0b;
+=======
+  background-color: #00c7eb;
+  color: #fff;
+>>>>>>> origin/experimental
   padding: 5px 10px;
   font-size: 14px;
   font-weight: bold;
@@ -303,6 +329,7 @@ button:hover .button-text {
   text-align: center; 
   white-space: nowrap; 
   overflow: hidden; 
+<<<<<<< HEAD
   text-overflow: ellipsis;
 }
 
@@ -325,6 +352,29 @@ button:hover .button-text {
   cursor: pointer;
   max-width: 65px;
   height: 40px; 
+=======
+  text-overflow: ellipsis; 
+}
+
+.category-box:hover {
+  background-color: #65939b;
+  transform: scale(1.1); 
+  box-shadow: 0 0 10px rgba(104, 182, 196, 0.8); 
+}
+
+.sub-category-box {
+  background-color: #00c7eb;
+  color: #fff;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex; /* Use flexbox to center content */
+  align-items: center; /* Vertically centers the text */
+  justify-content: center; /* Horizontally centers the text */
+  cursor: pointer;
+  max-width: 75px;
+  height: 40px; /* Explicit height to assist with vertical centering */
+>>>>>>> origin/experimental
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 5px;
   text-align: center; 
@@ -334,6 +384,7 @@ button:hover .button-text {
 }
 
 .sub-category-box:hover {
+<<<<<<< HEAD
   background-color: #035B98;
   transform: scale(1.1); 
   box-shadow: 0 0 10px #035B98;
@@ -350,3 +401,11 @@ head-news{
   font-weight: 700;
   color: #333;
 }
+=======
+  background-color: #65939b;
+  transform: scale(1.1); 
+  box-shadow: 0 0 10px rgba(104, 182, 196, 0.8); 
+}
+
+
+>>>>>>> origin/experimental
