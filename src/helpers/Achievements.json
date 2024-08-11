@@ -2,32 +2,17 @@
     "0": [
         {
             "name": "Meghna Suresh",
-
-            "details": [
-
-             "Outstanding Student Volunteer Fresher - Malabar Section",
-            "Best Volunteer Young Buddies",
-            "Best Volunteer Concordia",
-            "IEEE India Council Student Coordination Team",
-            "IEEE EdSoc Intern",
-            "IEEE Xtreme Ambassador"
-            ],
+            "details": "Outstanding Student Volunteer Fresher - Malabar Section                  Best Volunteer Young Buddies             ⁠Best Volunteer Concordia         IEEE India Council Student Coordination Team          Ieee edsoc intern              ieee Xtreme Ambassador",
             "img": "https://i.postimg.cc/Bvk07zgc/meghna.png"
         },
         {
             "name": "Greeshma",
-            "details":
-            [ "IEEE IA/IE/PELS Jt. Chapter Kerala Student Leadership Team 2024 - Designer",
-            "IEEE COMPUTE - Graphics Designer"
-            ],
+            "details": "IEEE IA/IE/PELS Jt. Chapter Kerala Student Leadership Team 2024 - Designer\\nnIEEE COMPUTE - Graphics Designer",
             "img": "https://i.postimg.cc/Gp80DQCB/greeshma.png"
         },
         {
             "name": "Varsha Prasad",
-            "details":
-            [ "IEEE Kerala Section Intern",
-            "IEEE SSCS Kerala Chapter - Content Lead"
-            ],
+            "details": "IEEE Kerala Section Intern\\nIEEE SSCS Kerala Chapter - Content Lead",
             "img": "https://i.postimg.cc/G2D1Wjg0/varsha.png"
         },
         {
