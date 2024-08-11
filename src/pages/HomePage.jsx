@@ -10,6 +10,7 @@ import ExecomSection from "../components/ExecomSection/ExecomSection";
 import GallerySection from "../components/GallerySection/GallerySection";
 import InfoSection from "@/components/InfoSection/InfoSection";
 import Spacer from "@/components/Spacer";
+import AchievementsSlider from "@/components/Achievements/AchievementSlider";
 
 
 const HomePage = () => {
@@ -24,6 +25,7 @@ const HomePage = () => {
           <Events />
           {/* <Spacer /> */}
            <Achievements /> 
+           <AchievementsSlider/>
           <Spacer />
           <GallerySection />
           <Spacer/>

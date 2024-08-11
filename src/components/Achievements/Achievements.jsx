@@ -67,12 +67,7 @@ const Achievements = () => {
               key={index}
               image={Achievement.img}
               name={Achievement.name}
-            
-              
 
-
-
-              
 
             />
           ))}
