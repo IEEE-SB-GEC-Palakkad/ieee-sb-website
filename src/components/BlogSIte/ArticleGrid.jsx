@@ -10,6 +10,7 @@ const ArticleGrid = () => {
     <div className="gridblock">
       <div className="main-articles">
         <MainArticle
+        id="1"
         Category="infomation"
           heading="Main Article Heading 1"
           readTime="August 7, 2024 |5 min read"
@@ -17,6 +18,7 @@ const ArticleGrid = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum."
         />
         <MainArticle
+        id="2"
           heading="Main Article Heading 2"
           readTime="August 7, 2024 |5 min read"
           imageUrl="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
@@ -25,6 +27,7 @@ const ArticleGrid = () => {
       </div>
       <div className="sub-articles">
         <SubArticle
+        id="3"
         Category="sub"
           heading="Sub-Article 1"
           readTime="August 7, 2024 |5 min read"
@@ -32,12 +35,14 @@ const ArticleGrid = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum."
         />
         <SubArticle
+        id="4"
           heading="Sub-Article 2"
           readTime="August 7, 2024 |5 min read"
           imageUrl="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum."
         />
         <SubArticle
+        id="5"
           heading="Sub-Article 3"
           readTime="August 7, 2024 |5 min read"
           imageUrl="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"

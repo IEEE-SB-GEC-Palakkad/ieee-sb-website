@@ -1,0 +1,30 @@
+.image-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.image1 {
+  width: 60%;
+}
+
+.heading11 {
+  justify-content: center;
+  text-align: center;
+}
+
+.heading22 {
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  margin-top: -1%;
+}
+
+.para11 {
+  text-align: center;
+  margin-left: 13%;
+  margin-right: 10%;
+  color: rgb(42, 41, 41);
+}

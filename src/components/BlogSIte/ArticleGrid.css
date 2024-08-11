@@ -37,6 +37,8 @@ a {
 .main-article h1 {
   font-size: 24px;
   margin-bottom: 10px;
+  display: flex;
+  text-align: center;
 }
 
 .main-article p.date,
