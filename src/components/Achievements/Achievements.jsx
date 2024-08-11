@@ -40,7 +40,7 @@ const Achievements = () => {
             </span>
               ))}
             </p>
-         {/*  explore button is disabled
+         {/*  Explore button is disabled 
              <div className="event-explore">
               <button className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D]">
                 Explore
