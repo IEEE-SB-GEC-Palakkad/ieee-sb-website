@@ -34,7 +34,7 @@ const Achievements = () => {
             </h3>
             <p className="event-description text-right"  >
               {AchievementsData?.[0]?.[achivementIndex]?.details.split('|').map((line, index) => (
-             <span key={index} style={{ color: '#000000' }}>
+             <span key={index} style={{ color: '#5C5C5C' }}>
                 {line}
              <br />
             </span>
