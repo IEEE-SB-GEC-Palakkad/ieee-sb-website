@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Monument Extended Regular";
+  src: local("Monument Extended Regular"),
+    url("./assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: beige;
+}
 body,
 h1,
 h2,
@@ -32,14 +45,18 @@ a {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .main-article h1 {
   font-size: 24px;
   margin-bottom: 10px;
-  display: flex;
-  text-align: center;
+  color: #333;
+  font-weight: 700;
+   text-align: center;
 }
+
+
 
 .main-article p.date,
 .main-article p.read-time {
@@ -108,6 +125,9 @@ a {
 .sub-article h2 {
   font-size: 20px;
   margin-bottom: 5px;
+  align-items: center;
+  font-weight: 500;
+  color: #0f0b0b;
 }
 
 .sub-article p.date,
@@ -117,6 +137,10 @@ a {
   color: #777;
   margin-bottom: 5px;
   align-items: flex-start;
+}
+
+.desc p {
+  color: #333;
 }
 
 .sub-article .read-more {
@@ -240,7 +264,7 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 2.85rem;
-  color: rgb(43, 124, 231);
+  color:#035B98 ;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -266,8 +290,8 @@ button:hover .button-text {
   margin-top: auto;
 }
 .category-box {
-  background-color: #00c7eb;
-  color: #fff;
+  background-color: #e4f1fe;
+  color:#0f0b0b;
   padding: 5px 10px;
   font-size: 14px;
   font-weight: bold;
@@ -279,26 +303,27 @@ button:hover .button-text {
   text-align: center; 
   white-space: nowrap; 
   overflow: hidden; 
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 
 .category-box:hover {
-  background-color: #65939b;
+  background-color: #035B98;
   transform: scale(1.1); 
-  box-shadow: 0 0 10px rgba(104, 182, 196, 0.8); 
+  box-shadow: 0 0 10px #035B98; 
+  color: #fff;
 }
 
 .sub-category-box {
-  background-color: #00c7eb;
-  color: #fff;
-  padding: 2px 4px;
+  background-color: #e4f1fe;
+  color: #0f0b0b;
+  padding: 3px 4px;
   font-size: 12px;
   font-weight: bold;
   display: flex; 
   align-items: center; 
   justify-content: center; 
   cursor: pointer;
-  max-width: 75px;
+  max-width: 65px;
   height: 40px; 
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 5px;
@@ -309,9 +334,10 @@ button:hover .button-text {
 }
 
 .sub-category-box:hover {
-  background-color: #65939b;
+  background-color: #035B98;
   transform: scale(1.1); 
-  box-shadow: 0 0 10px rgba(104, 182, 196, 0.8); 
+  box-shadow: 0 0 10px #035B98;
+  color: #fff; 
 }
 
 

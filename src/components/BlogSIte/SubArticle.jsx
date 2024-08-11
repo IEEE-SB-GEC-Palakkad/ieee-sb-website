@@ -18,7 +18,7 @@ const SubArticle = ({ id, Category, heading, date, readTime, imageUrl, descripti
         <p className="date">
           <span className="article-link">{date}</span>
         </p>
-        <p>
+        <p className='desc'>
           <Link to={`/blog/${id}`} className="article-link">{description}</Link>
         </p>
         <Link to={`/blog/${id}`} className="article-link">
