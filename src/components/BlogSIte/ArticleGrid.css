@@ -315,3 +315,12 @@ button:hover .button-text {
 }
 
 
+.desc{
+  font-weight: 400;
+  color: #333;
+}
+
+head-news{
+  font-weight: 700;
+  color: #333;
+}

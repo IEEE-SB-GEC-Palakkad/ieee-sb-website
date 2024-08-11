@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MainArticle = ({
   id,
@@ -10,28 +11,28 @@ const MainArticle = ({
 }) => {
   return (
     <div className="main-article">
-      <div class="category-box">{Category}</div>
-      <a href={"/blog/${id}"} className="article-link">
+      <div className="category-box">{Category}</div>
+      <Link to={`/blog/${id}`} className="article-link">
         <h1>{heading}</h1>
-      </a>
+      </Link>
 
       <p className="read-time">
-        <a href="#" className="article-link">
+        <span className="article-link">
           {readTime}
-        </a>
+        </span>
       </p>
-      <a href={"/blog/${id}"} className="article-link">
+      <Link to={`/blog/${id}`} className="article-link">
         <div
           className="image"
           style={{ backgroundImage: `url(${imageUrl})` }}
         ></div>
-      </a>
+      </Link>
       <p>
-        <a href={"/blog/${id}"} className="article-link">
+        <Link to={`/blog/${id}`} className="article-link">
           {description}
-        </a>
+        </Link>
       </p>
-      <a href={"/blog/${id}"} className="article-link">
+      <Link to={`/blog/${id}`} className="article-link">
         <div className="button-container">
           <button className="learn-more">
             <span className="circle" aria-hidden="true">
@@ -40,7 +41,7 @@ const MainArticle = ({
             <span className="button-text">Read More</span>
           </button>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
