@@ -2,7 +2,14 @@
     "0": [
         {
             "name": "Meghna Suresh",
-            "details": "Outstanding Student Volunteer Fresher - Malabar Section <br> Best Volunteer Young Buddies  \n ⁠Best Volunteer Concordia <br> IEEE India Council Student Coordination Team  \n\n Ieee edsoc intern \n ieee Xtreme Ambassador",
+           "details": [
+                "Outstanding Student Volunteer Fresher - Malabar Section",
+                "Best Volunteer Young Buddies",
+                "Best Volunteer Concordia",
+                "IEEE India Council Student Coordination Team",
+                "IEEE EdSoc Intern",
+                "IEEE Xtreme Ambassador"
+            ],
             "img": "https://i.postimg.cc/Bvk07zgc/meghna.png"             
         },
         {
