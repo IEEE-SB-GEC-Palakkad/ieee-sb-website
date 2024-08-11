@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; // Correct import statement
 import "./Achievements.css";
 import AchievementsData from "../../helpers/Achievements.json";
 
-
-
-
+// Rest of your component code
 
 
 const AchievementsSlider = () => {
