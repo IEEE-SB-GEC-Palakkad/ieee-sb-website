@@ -40,12 +40,14 @@ const Achievements = () => {
             </span>
               ))}
             </p>
-
-            <div className="event-explore">
+         {/*  explore button is disabled
+             <div className="event-explore">
               <button className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D]">
                 Explore
               </button>
             </div>
+           */}
+
             <div className="nav-btn">
               <button onClick={()=>handleAchivementIndex(MENU_CONTROL.LEFT)}>
                 <img src={left} className="w-10 my-2" alt="" />
@@ -65,6 +67,13 @@ const Achievements = () => {
               key={index}
               image={Achievement.img}
               name={Achievement.name}
+            
+              
+
+
+
+              
+
             />
           ))}
         </div>
