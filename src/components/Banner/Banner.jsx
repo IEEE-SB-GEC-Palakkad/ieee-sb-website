@@ -20,11 +20,12 @@ const Banner = () => {
             <div className="navbar_links">
               <Link to="/">Home</Link>
               <a href="/#events">Events</a>
-              <a href="/#achievements">Achivements</a>
+              <a href="/#achievements">Achievements</a>
               <a href="/#society">Societies</a>
               <a href="/#gallery">Gallery</a>
               <a href="/#execom">Execom</a>
               <a href="/#contact">Contact</a>
+              <a href="/blog">Blog</a>
             </div>
             <div className="navbar_line"></div>
           </div>

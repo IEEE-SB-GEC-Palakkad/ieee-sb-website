@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -14,7 +13,7 @@ const MainArticle = ({
     <div className="main-article">
       <div className="category-box">{Category}</div>
       <Link to={`/blog/${id}`} className="article-link">
-        <h1 className="titles">{heading}</h1>
+        <h1>{heading}</h1>
       </Link>
 
       <p className="read-time">
@@ -43,11 +42,8 @@ const MainArticle = ({
           </button>
         </div>
       </Link>
-
     </div>
   );
 };
 
-
 export default MainArticle;
-

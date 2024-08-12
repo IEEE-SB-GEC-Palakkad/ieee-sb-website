@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -35,11 +34,7 @@
   }
   
   .execom-member:hover {
-<<<<<<< HEAD
     box-shadow: 0 0 10px #035B98;
-=======
-    box-shadow: 0 0 10px #007bff;
->>>>>>> origin/experimental
   }
   
   .execom-image {
@@ -152,10 +147,4 @@
   
   section {
     margin-bottom: 3rem;
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> origin/experimental
-=======
->>>>>>> parent of e75aab1 (Merge pull request #7 from IEEE-SB-GEC-Palakkad/experimental)

@@ -42,6 +42,9 @@ const MobileNavbar = ({ menu, setMenu }) => {
           <a onClick={() => setMenu(false)} href="/#contact">
             Contact
           </a>
+          <a onClick={() => setMenu(false)} href="/blog">
+            Blog
+          </a>
         </div>
       </animated.div>
     </>
