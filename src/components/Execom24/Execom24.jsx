@@ -41,7 +41,7 @@ const Execom24 = () => {
                   name="ALEENA OK"
                   position="SECRETARY"
                   image='src\assets\images\Exicom24\edited_execom\aleena.png'
-                  linkedinUrl="https://www.linkedin.com/in/p-y-muhammed-rahil-5a0037241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  linkedinUrl="https://linkedin.com/in/aleena-oralakkottu"
                 />
                 <ExecomMember 
                   name="YADURAJAKRISHNA"
@@ -65,7 +65,7 @@ const Execom24 = () => {
                   name="ADHIL JAHAN"
                   position="TECHNICAL CORDINATOR"
                   image='src\assets\images\Exicom24\edited_execom\adil.png'
-                  linkedinUrl="linkedin.com/in/adhiljahan"
+                  linkedinUrl="https://www.linkedin.com/in/adhiljahan"
                 />
                 <ExecomMember 
                   name="NAMITHA"
@@ -101,7 +101,7 @@ const Execom24 = () => {
                 <ExecomMember 
                   name="LISY ER"
                   position="CHAPTER ADVISOR"
-                  image={com}
+                  image="src\assets\images\Exicom24\edited_execom\lisy.png"
                   linkedinUrl=""
                 />
                 <ExecomMember 
@@ -158,13 +158,13 @@ const Execom24 = () => {
                   name="GREESHMA V"
                   position="SECRETARY"
                   image='src\assets\images\Exicom24\edited_execom\GREESHMA.png'
-                  linkedinUrl="www.linkedin.com/in/greeshmavinodh"
+                  linkedinUrl="https://www.linkedin.com/in/greeshmavinodh"
                 />
                 <ExecomMember 
                   name="ANU RAJ"
                   position="PROGRAM COORDINATOR"
                   image='src\assets\images\Exicom24\edited_execom\anuraj.png'
-                  linkedinUrl="https://www.linkedin.com/in/ anu-raj-11aba7322"
+                  linkedinUrl="https://www.linkedin.com/in/anu-raj-11aba7322"
                 />
                 <ExecomMember 
                   name="DEVIKA P DINESH"
@@ -189,7 +189,7 @@ const Execom24 = () => {
                   name="AGNES DAVIES"
                   position="CHAIRPERSON"
                   image='src\assets\images\Exicom24\edited_execom\agnes.png'
-                  linkedinUrl="https://www.linkedin.com/in/ agnesdavies"
+                  linkedinUrl="https://www.linkedin.com/in/agnesdavies"
                 />
                 <ExecomMember 
                   name="MANNUAL DOMNY"
@@ -225,13 +225,13 @@ const Execom24 = () => {
                   name="ARCHANA NK"
                   position="CHAIRPERSON"
                   image='src\assets\images\Exicom24\edited_execom\Archana.png'
-                  linkedinUrl="linkedin.com/in/archana-n-k "
+                  linkedinUrl="https://www.linkedin.com/in/archana-n-k "
                 />
                 <ExecomMember 
                   name="DEVIKA VR"
                   position="VICE CHAIRPERSON"
                   image='src\assets\images\Exicom24\edited_execom\devika.png'
-                  linkedinUrl="www.linkedin.com/in/devikavr"
+                  linkedinUrl="https://www.linkedin.com/in/devikavr"
                 />
                 <ExecomMember 
                   name="RINGLOO M"
@@ -360,7 +360,7 @@ const Execom24 = () => {
               </div>
             </section>
             <section>
-              <h2 className="section-heading">WEB TEAM</h2>
+              <h2 className="section-heading">MEDIA TEAM</h2>
               <div className="flex flex-wrap justify-center items-center">
                 <ExecomMember 
                   name="AADHIL SH"
