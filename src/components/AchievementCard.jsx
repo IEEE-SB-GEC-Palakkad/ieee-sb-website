@@ -6,7 +6,7 @@ const AchievementCard = ({ image, name, details }) => {
       <img
         src={image}
         alt={name}
-        className="max-w-full max-h-full rounded-md object-cover"
+        className="w-32 h-32 max-w-full max-h-full rounded-md object-cover"
       />
       <h3 className="text-center text-sm font-semibold text-gray-600 rotated-text">
         {name}
@@ -18,3 +18,5 @@ const AchievementCard = ({ image, name, details }) => {
 };
 
 export default AchievementCard;
+
+
