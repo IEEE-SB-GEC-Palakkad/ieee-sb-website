@@ -36,6 +36,4 @@ const SubArticle = ({ id, Category, heading, date, readTime, imageUrl, descripti
   );
 };
 
-
 export default SubArticle;
-
