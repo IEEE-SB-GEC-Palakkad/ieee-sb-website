@@ -11,7 +11,6 @@ import GallerySection from "../components/GallerySection/GallerySection";
 import InfoSection from "@/components/InfoSection/InfoSection";
 import Spacer from "@/components/Spacer";
 
-
 const HomePage = () => {
   return (
     <>
@@ -22,8 +21,8 @@ const HomePage = () => {
           <Societies />
           <Spacer />
           <Events />
-          {/* <Spacer /> */}
-           <Achievements /> 
+          <Spacer /> 
+          <Achievements /> 
           <Spacer />
           <GallerySection />
           <Spacer/>
