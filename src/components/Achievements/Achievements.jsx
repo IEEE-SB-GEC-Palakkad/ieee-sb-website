@@ -5,7 +5,7 @@ import left from "../../assets/images/left.png";
 import right from "../../assets/images/right.png";
 import Heading from "../Heading";
 import AchievementCard from "../AchievementCard";
-import { MENU_CONTROL } from "../../constants/achivementConstants"
+import { MENU_CONTROL } from "../../constants/achivementConstants";
 
 const Achievements = () => {
   const [achivementIndex, setAchievementIndex] = React.useState(0);
@@ -25,7 +25,11 @@ const Achievements = () => {
       <div className="events container">
         <div className="event-details hidden sm:flex">
           <div className="border-2 shadow-2xl h-96 w-72 flex justify-center items-center rounded-xl">
-            <img src={AchievementsData?.[0]?.[achivementIndex]?.img} className="w-full h-full rounded-lg object-cover"  alt="" />
+            <img
+              src={AchievementsData?.[0]?.[achivementIndex]?.img}
+              className="w-full h-full rounded-lg object-cover"
+              alt=""
+            />
           </div>
           <div className="event-contents flex justify-center items-end">
             <Heading text="ACHIEVEMENTS" className="sm:!text-right w-full" />
@@ -35,16 +39,13 @@ const Achievements = () => {
             <p className="event-description text-right">
               {AchievementsData?.[0]?.[achivementIndex]?.details}
             </p>
-            {/*<div className="event-explore">
-              <button className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D]">
-                Explore
-              </button>
-            </div>*/}
             <div className="nav-btn">
-              <button onClick={()=>handleAchivementIndex(MENU_CONTROL.LEFT)}>
+              <button onClick={() => handleAchivementIndex(MENU_CONTROL.LEFT)}>
                 <img src={left} className="w-10 my-2" alt="" />
               </button>
-              <button onClick={()=>handleAchivementIndex(MENU_CONTROL.RIGHT)}>
+              <button
+                onClick={() => handleAchivementIndex(MENU_CONTROL.RIGHT)}
+              >
                 <img src={right} className="w-10 mx-3 my-2" alt="" />
               </button>
             </div>
