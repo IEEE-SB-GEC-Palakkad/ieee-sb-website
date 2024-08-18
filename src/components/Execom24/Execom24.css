@@ -29,12 +29,13 @@
     transition: .5s;
     padding: 12px;
     margin: 10px;
-    background:linear-gradient(rgba(84, 79, 108, 0.5),rgb(219, 232, 248,0.5));
+    background:rgba(0, 0, 0,0.8);
+    
     text-align: center;
   }
   
   .execom-member:hover {
-    box-shadow: 0 0 10px #035B98;
+    box-shadow: 0 0 15px #007bff;
   }
   
   .execom-image {
@@ -49,7 +50,9 @@
     height: 90%;
     width: auto;
     
-    border-radius: 15px;
+    
+    
+   
     transition: .5s;
   }
   
@@ -63,14 +66,14 @@
   }
   
   .execom-name {
-    color: black;
+  
     font-weight: 700;
     font-size: 1.1em;
     font-family: sans-serif;
   }
   
   .execom-position {
-    color: black;
+   
     font-family: sans-serif;
   }
   
