@@ -5,16 +5,12 @@ import left from "../../assets/images/left.png";
 import right from "../../assets/images/right.png";
 import Heading from "../Heading";
 import AchievementCard from "../AchievementCard";
-<<<<<<< HEAD
-
-const Achievements = () => {
-  const [Achievements, setAchievements] = React.useState([0]);
-=======
-import { MENU_CONTROL } from "../../constants/achivementConstants"
+import { MENU_CONTROL } from "../../constants/achivementConstants";
 
 const Achievements = () => {
   const [achivementIndex, setAchievementIndex] = React.useState(0);
   const achivementCount = AchievementsData?.[0]?.length;
+
   const handleAchivementIndex = (control = MENU_CONTROL.RIGHT) => {
     if (control === MENU_CONTROL.RIGHT) {
       setAchievementIndex((prev) => (prev + 1) % achivementCount);
@@ -24,65 +20,41 @@ const Achievements = () => {
       );
     }
   };
->>>>>>> origin/experimental
 
   return (
     <>
       <div className="events container">
         <div className="event-details hidden sm:flex">
-<<<<<<< HEAD
-          <div className="event-image border-2 shadow-2xl h-96 w-72 flex justify-center items-center rounded-xl">
-            <img src={AchievementsData[0][Achievements].img} className="w-full"  alt="" />
-=======
           <div className="border-2 shadow-2xl h-96 w-72 flex justify-center items-center rounded-xl">
-            <img src={AchievementsData?.[0]?.[achivementIndex]?.img} className="w-full h-full rounded-lg object-cover"  alt="" />
->>>>>>> origin/experimental
+            <img
+              src={AchievementsData?.[0]?.[achivementIndex]?.img}
+              className="w-full h-full rounded-lg object-cover"
+              alt=""
+            />
           </div>
           <div className="event-contents flex justify-center items-end">
             <Heading text="ACHIEVEMENTS" className="sm:!text-right w-full" />
             <h3 className="event-name border-b-4 border-slate-600 float-none sm:!text-right ">
-<<<<<<< HEAD
-              {AchievementsData[0][Achievements].name}
-            </h3>
-            <p className="event-description text-right">
-              {AchievementsData[0][Achievements].details}
-            </p>
-            <div className="event-explore">
-=======
               {AchievementsData?.[0]?.[achivementIndex]?.name}
             </h3>
-            <p className="event-description text-right"  >
+            <p className="event-description text-right">
               {AchievementsData?.[0]?.[achivementIndex]?.details.split('|').map((line, index) => (
-             <span key={index} style={{ color: '#5C5C5C' }}>
-                {line}
-             <br />
-            </span>
+                <span key={index} style={{ color: '#5C5C5C' }}>
+                  {line}
+                  <br />
+                </span>
               ))}
             </p>
-         {/*  Explore button is disabled 
-             <div className="event-explore">
->>>>>>> origin/experimental
+            {/*<div className="event-explore">
               <button className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D]">
                 Explore
               </button>
-            </div>
-<<<<<<< HEAD
+            </div>*/}
             <div className="nav-btn">
-              <button
-                onClick={() => setAchievements(Math.abs(Achievements - 1) % 3)}
-              >
-                <img src={left} className="w-10 my-2" alt="" />
-              </button>
-              <button onClick={() => setAchievements((Achievements + 1) % 3)}>
-=======
-           */}
-
-            <div className="nav-btn">
-              <button onClick={()=>handleAchivementIndex(MENU_CONTROL.LEFT)}>
+              <button onClick={() => handleAchivementIndex(MENU_CONTROL.LEFT)}>
                 <img src={left} className="w-10 my-2" alt="" />
               </button>
               <button onClick={()=>handleAchivementIndex(MENU_CONTROL.RIGHT)}>
->>>>>>> origin/experimental
                 <img src={right} className="w-10 mx-3 my-2" alt="" />
               </button>
             </div>
@@ -97,11 +69,7 @@ const Achievements = () => {
               key={index}
               image={Achievement.img}
               name={Achievement.name}
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/experimental
+              details={Achievement.details}
             />
           ))}
         </div>

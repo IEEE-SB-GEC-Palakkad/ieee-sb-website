@@ -22,12 +22,8 @@ const HomePage = () => {
           <Societies />
           <Spacer />
           <Events />
-          {/* <Spacer /> */}
-<<<<<<< HEAD
-          {/* <Achievements /> */}
-=======
-           <Achievements /> 
->>>>>>> origin/experimental
+           <Spacer /> 
+          <Achievements /> 
           <Spacer />
           <GallerySection />
           <Spacer/>
