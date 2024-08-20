@@ -79,4 +79,3 @@ const Achievements = () => {
 };
 
 export default Achievements;
-
