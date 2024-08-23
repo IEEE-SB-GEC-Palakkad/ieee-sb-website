@@ -7,6 +7,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Execom23 from "./components/Execom23/Execom23";
 import Execom22 from "./components/Exicom22/Exicom22";
 import ArticleGrid from "./components/BlogSIte/ArticleGrid";
+import BlogComponent from "./components/BlogComponent/BlogComponent";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,9 @@ const router = createBrowserRouter([
     path: "/blog",
     element: <ArticleGrid />,
   },
-  
+  {
+    path: "/blog/:id",
+    element: <BlogComponent />,
+  }
 ]);
 export default router;
