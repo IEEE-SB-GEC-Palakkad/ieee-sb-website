@@ -29,14 +29,14 @@
     transition: .5s;
     padding: 12px;
     margin: 10px;
-
     background:#035B98;
-
     text-align: center;
+    filter: grayscale(100%); 
   }
   
   .execom-member:hover {
     box-shadow: 0 0 15px #007bff;
+    filter: grayscale(0%);
   }
   
   .execom-image {
