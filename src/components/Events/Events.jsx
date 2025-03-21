@@ -9,6 +9,7 @@ import EventCard from "../EventCard";
 const Events = () => {
   const [events, setEvents] = useState(0);
   const [showPdf, setShowPdf] = useState(false);
+  const [fullscreen, setFullscreen] = useState(false);
   
   // Calculate total number of events for correct navigation
   const totalEvents = eventData[0].length;
@@ -16,6 +17,13 @@ const Events = () => {
   // Handle viewing PDF
   const handleViewPdf = () => {
     setShowPdf(!showPdf);
+    // Reset fullscreen when toggling PDF view
+    if (fullscreen) setFullscreen(false);
+  };
+
+  // Toggle fullscreen mode for PDF
+  const toggleFullscreen = () => {
+    setFullscreen(!fullscreen);
   };
 
   // Handle navigation with correct modulo arithmetic
@@ -37,6 +45,25 @@ const Events = () => {
 
   return (
     <>
+      {/* Fullscreen PDF overlay */}
+      {fullscreen && showPdf && eventData[0][events].pdf && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-75 flex justify-center items-center">
+          <div className="relative w-full h-full max-w-7xl max-h-screen p-4">
+            <button 
+              onClick={toggleFullscreen}
+              className="absolute top-4 right-4 z-10 bg-red-600 text-white p-2 rounded-full"
+            >
+              ✕
+            </button>
+            <iframe
+              src={eventData[0][events].pdf}
+              title={`PDF for ${eventData[0][events].name}`}
+              className="w-full h-full border-0"
+            ></iframe>
+          </div>
+        </div>
+      )}
+
       <div id="events" className="events container">
         <Heading text="EVENTS" />
         <div className="event-details hidden sm:flex">
@@ -46,15 +73,24 @@ const Events = () => {
             </h3>
             <p className="event-description">{eventData[0][events].details}</p>
             
-            {/* PDF button - only show if the current event has a PDF */}
+            {/* PDF buttons - only show if the current event has a PDF */}
             {eventData[0][events].pdf && (
-              <div className="event-pdf">
+              <div className="event-pdf flex space-x-2">
                 <button 
                   onClick={handleViewPdf} 
                   className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D]"
                 >
                   {showPdf ? "Hide PDF" : "View PDF"}
                 </button>
+                
+                {showPdf && (
+                  <button 
+                    onClick={toggleFullscreen} 
+                    className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#005F8D]"
+                  >
+                    {fullscreen ? "Exit Fullscreen" : "Fullscreen PDF"}
+                  </button>
+                )}
               </div>
             )}
             
@@ -94,7 +130,8 @@ const Events = () => {
               key={index} 
               image={fixImagePath(event.img)}
               name={event.name} 
-              pdf={event.pdf} 
+              pdf={event.pdf}
+              enableFullscreen={true}
             />
           ))}
         </div>
