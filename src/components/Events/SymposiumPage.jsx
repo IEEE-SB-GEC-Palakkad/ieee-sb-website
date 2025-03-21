@@ -8,10 +8,8 @@ const SymposiumPage = () => {
   const navigate = useNavigate();
   const symposiumData = eventData[0][0];
   
-  
   const registrationFormUrl = "https://forms.gle/yourGoogleFormLink";
 
- 
   const fixImagePath = (path) => {
     if (!path) return "";
     if (path.startsWith("images/")) return path;
@@ -19,19 +17,21 @@ const SymposiumPage = () => {
     return path;
   };
 
- 
   const handleBackClick = () => {
     navigate("/#events");
   };
 
- 
+  // Updated PDF download function with proper Vercel path handling
   const handleDownloadPDF = () => {
-    const pdfPath = symposiumData.pdf;
-    if (pdfPath) {
-      window.open("../../../public/pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf", "_blank");
+    try {
+      // Use the relative path from the public directory
+      // In Vercel, the public directory is served at the root
+      window.open("/pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf", "_blank");
+    } catch (error) {
+      console.error("Error opening PDF:", error);
+      alert("Sorry, there was an issue downloading the PDF. Please try again later.");
     }
   };
-
   
   const openRegistrationForm = () => {
     window.open(registrationFormUrl, "_blank");
@@ -72,8 +72,8 @@ const SymposiumPage = () => {
           </div>
           
           <div className="additional-info bg-blue-900 p-4 rounded-md border border-gray-200 mb-6">
-            <h3 className="font-semibold text-lg mb-2">Event Highlights</h3>
-            <ul className="list-disc pl-5 text-gray-700">
+            <h3 className="font-semibold text-lg mb-2 text-white">Event Highlights</h3>
+            <ul className="list-disc pl-5 text-gray-200">
               <li>Platform to present innovative ideas and projects</li>
               <li>Expert panel evaluation and feedback</li>
               <li>Networking opportunities with industry professionals</li>
@@ -100,8 +100,8 @@ const SymposiumPage = () => {
       
       <div className="registration-info mt-10 p-6 bg-blue-900 rounded-lg border border-blue-100">
         <h3 className="text-xl font-bold text-[#eceff1] mb-4">Registration Information</h3>
-        <p className="mb-4">
-          Registration for the IEEE Symposium is now open<br></br> Join us for this exciting platform to showcase your innovative ideas and projects!
+        <p className="mb-4 text-gray-200">
+          Registration for the IEEE Symposium is now open<br />Join us for this exciting platform to showcase your innovative ideas and projects!
         </p>
         <button 
           onClick={openRegistrationForm}
