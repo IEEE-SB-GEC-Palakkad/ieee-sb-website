@@ -1,0 +1,39 @@
+.symposium-page {
+    max-width: 1200px;
+  }
+  
+  .back-button {
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    transform: translateX(-5px);
+  }
+  
+  .symposium-image img {
+    transition: all 0.3s ease;
+  }
+  
+  .symposium-image img:hover {
+    transform: scale(1.02);
+  }
+  
+  .download-button {
+    transition: all 0.3s ease;
+  }
+  
+  .download-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .symposium-content {
+      flex-direction: column;
+    }
+    
+    .symposium-image, 
+    .symposium-details {
+      width: 100%;
+    }
+  }
