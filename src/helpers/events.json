@@ -14,6 +14,12 @@
             "name": "Upscale",
             "details": "Upscale is the flagship event conducted by IEEE SB GEC Palakkad, focusing on the exposure of the participants to different dimensions of entrepreneurship and start-up ideas. Shaping young minds to become efficient and professional entrepreneurs through a week long program.",
             "img": "images/upscale.png"
+        },
+        {
+            "name": "IEEE Symposium",
+            "details": "Content?",
+            "img": "images/symposium.jpg",
+            "pdf": "pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf"
         }
     ]
 }
