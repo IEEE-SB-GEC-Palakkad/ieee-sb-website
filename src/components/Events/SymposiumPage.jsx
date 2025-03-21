@@ -21,15 +21,25 @@ const SymposiumPage = () => {
     navigate("/#events");
   };
 
-  // Updated PDF download function with proper Vercel path handling
+  
   const handleDownloadPDF = () => {
     try {
-      // Use the relative path from the public directory
-      // In Vercel, the public directory is served at the root
+     
       window.open("/pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf", "_blank");
     } catch (error) {
       console.error("Error opening PDF:", error);
       alert("Sorry, there was an issue downloading the PDF. Please try again later.");
+    }
+  };
+  
+  // New function to handle zip file download
+  const handleDownloadZip = () => {
+    try {
+      // Use the relative path from the public directory
+      window.open("/pdf/IEEE Symposium-2025_Poster Template_LaTeX.zip", "_blank");
+    } catch (error) {
+      console.error("Error downloading ZIP file:", error);
+      alert("Sorry, there was an issue downloading the ZIP file. Please try again later.");
     }
   };
   
@@ -74,16 +84,21 @@ const SymposiumPage = () => {
           <div className="additional-info bg-blue-900 p-4 rounded-md border border-gray-200 mb-6">
             <h3 className="font-semibold text-lg mb-2 text-white">Event Highlights</h3>
             <ul className="list-disc pl-5 text-gray-200">
-              <li>Platform to present innovative ideas and projects</li>
-              <li>Expert panel evaluation and feedback</li>
-              <li>Networking opportunities with industry professionals</li>
-              <li>Technical sponsorship by IEEE Malabar Subsection</li>
-              <li>Organized by the Department of Electrical Engineering, GEC Palakkad</li>
+            <li><strong>Platform for Innovation:</strong> Present your ideas and projects to a panel of experts.</li>
+<li><strong>Expert Evaluation:</strong> Receive constructive feedback from industry professionals.</li>
+<li><strong>Networking Opportunities:</strong> Connect with industry leaders and like-minded peers.</li>
+<li><strong>Technical Sponsorship:</strong> Supported by IEEE Malabar Subsection.</li>
+<li><strong>Organized by:</strong> Department of Electrical Engineering, GEC Palakkad.</li>
+<li><strong>Annual Symposium:</strong> A flagship event in association with IEEE Student Branch, GEC Palakkad.</li>
+<li><strong>Encouraging Creativity:</strong> Explore emerging technologies with curiosity and innovation.</li>
+<li><strong>Paper Submission:</strong> Submit a one-page summary on topics like drives, control, robotics, AI, and computing.</li>
+<li><strong>Publication Opportunity:</strong> Selected summaries will be published in the Institute Symposium Proceedings.</li>
+<li><strong>Fostering Collaboration:</strong> Engage in insightful discussions and groundbreaking ideas to drive innovation.</li>
             </ul>
           </div>
           
           {symposiumData.pdf && (
-            <div className="download-section mt-6">
+            <div className="download-section mt-6 flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={handleDownloadPDF}
                 className="download-button bg-[#00567D] text-white py-2 px-6 rounded-full hover:bg-blue-700 shadow-md flex items-center"
@@ -92,6 +107,16 @@ const SymposiumPage = () => {
                   <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
                 Download Event Details
+              </button>
+              
+              <button 
+                onClick={handleDownloadZip}
+                className="download-button bg-[#005F73] text-white py-2 px-6 rounded-full hover:bg-teal-700 shadow-md flex items-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                Download Resources
               </button>
             </div>
           )}
