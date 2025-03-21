@@ -8,7 +8,7 @@ const SymposiumPage = () => {
   const navigate = useNavigate();
   const symposiumData = eventData[0][0];
   
-  const registrationFormUrl = "https://forms.gle/yourGoogleFormLink";
+  const registrationFormUrl = "https://forms.gle/wD9hB9RsrkQBfpMHA";
 
   const fixImagePath = (path) => {
     if (!path) return "";
