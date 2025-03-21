@@ -4,13 +4,13 @@ const EventCard = (props) => {
   const [showPdf, setShowPdf] = useState(false);
   const [fullscreen, setFullscreen] = useState(false);
 
-  // Toggle PDF view
+ 
   const togglePdf = () => {
     setShowPdf(!showPdf);
     if (fullscreen) setFullscreen(false);
   };
 
-  // Toggle fullscreen mode
+ 
   const toggleFullscreen = () => {
     setFullscreen(!fullscreen);
   };
@@ -73,7 +73,7 @@ const EventCard = (props) => {
             {showPdf && props.enableFullscreen && (
               <button
                 onClick={toggleFullscreen}
-                className="px-3 py-1 bg-green-600 text-white rounded-md text-sm hover:bg-green-700"
+                className="px-3 py-1 bg-blue-600 text-white rounded-md text-sm hover:bg-red-100"
               >
                 Fullscreen
               </button>

@@ -11,17 +11,17 @@ const Events = () => {
   const [showPdf, setShowPdf] = useState(false);
   const [fullscreen, setFullscreen] = useState(false);
   
-  // Calculate total number of events for correct navigation
+  
   const totalEvents = eventData[0].length;
 
-  // Handle viewing PDF
+  
   const handleViewPdf = () => {
     setShowPdf(!showPdf);
-    // Reset fullscreen when toggling PDF view
+    
     if (fullscreen) setFullscreen(false);
   };
 
-  // Toggle fullscreen mode for PDF
+  
   const toggleFullscreen = () => {
     setFullscreen(!fullscreen);
   };
@@ -35,7 +35,7 @@ const Events = () => {
     setEvents((prevEvent) => (prevEvent + 1) % totalEvents);
   };
 
-  // Helper function to fix image paths
+
   const fixImagePath = (path) => {
     if (!path) return "";
     if (path.startsWith("images/")) return path;
@@ -45,7 +45,7 @@ const Events = () => {
 
   return (
     <>
-      {/* Fullscreen PDF overlay */}
+    
       {fullscreen && showPdf && eventData[0][events].pdf && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-75 flex justify-center items-center">
           <div className="relative w-full h-full max-w-7xl max-h-screen p-4">
@@ -71,9 +71,7 @@ const Events = () => {
             <h3 className="event-name border-b-4 border-slate-600">
               {eventData[0][events].name}
             </h3>
-            <p className="event-description">{eventData[0][events].details}</p>
-            
-            {/* PDF buttons - only show if the current event has a PDF */}
+            <p className="event-description">{eventData[0][events].details}</p>  
             {eventData[0][events].pdf && (
               <div className="event-pdf flex space-x-2">
                 <button 
