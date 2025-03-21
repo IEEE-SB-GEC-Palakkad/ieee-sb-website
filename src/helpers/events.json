@@ -1,6 +1,12 @@
 {
     "0": [
         {
+            "name": "IEEE Symposium",
+            "details": "The Symposium on Electrical Drives, Robotics, Control, and Computing is a flagship event of the Department of Electrical Engineering, GEC Palakkad organized every year in association with IEEE Student Branch, Government Engineering College Palakkad, designed to provide students with a platform to present their ideas and projects in front of a panel of experts. The event is technically sponsored by IEEE Malabar Subsection",
+            "img": "images/symposium.jpg",
+            "pdf": "pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf"
+        },
+        {
             "name": "Excelsior",
             "details": "Excelsior, IEEE SB GEC Palakkad's flagship technical event, is a vibrant three-day gathering, at Government Engineering College Palakkad. The event featured an impressive lineup of activities, including three specialized workshops, two technical talks, a non-technical talk, an ice-breaking session, an interactive session, and a mesmerizing magic show. With 52 enthusiastic delegates in attendance, Excelsior'23 provided a platform for learning, networking, and personal growth. Highlights included an inaugural address by esteemed guests, insightful sessions on Web3 by Mr. Mirzad Makhdoom, hands-on workshops on React, Arduino, and AutoCAD, a mentalism show by Mr. Sravan Sudhakaran, and a valuable non-technical talk on abroad education by Ms. Umadevi Ajayakumar. The event culminated with a session on internship and placement opportunities by Mr. Shone Jose, leaving participants with invaluable knowledge and connections.",
             "img": "images/1.png"
@@ -14,12 +20,7 @@
             "name": "Upscale",
             "details": "Upscale is the flagship event conducted by IEEE SB GEC Palakkad, focusing on the exposure of the participants to different dimensions of entrepreneurship and start-up ideas. Shaping young minds to become efficient and professional entrepreneurs through a week long program.",
             "img": "images/upscale.png"
-        },
-        {
-            "name": "IEEE Symposium",
-            "details": "The Symposium on Electrical Drives, Robotics, Control, and Computing is a flagship event of the Department of Electrical Engineering, GEC Palakkad organized every year in association with IEEE Student Branch, Government Engineering College Palakkad, designed to provide students with a platform to present their ideas and projects in front of a panel of experts. The event is technically sponsored by IEEE Malabar Subsection",
-            "img": "images/symposium.jpg",
-            "pdf": "pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf"
         }
+        
     ]
 }
