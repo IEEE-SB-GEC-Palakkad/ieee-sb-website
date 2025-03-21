@@ -25,17 +25,17 @@ const SymposiumPage = () => {
   const handleDownloadPDF = () => {
     try {
      
-      window.open("/pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf", "_blank");
+      window.open("/pdf/Symposium''25.pdf", "_blank");
     } catch (error) {
       console.error("Error opening PDF:", error);
       alert("Sorry, there was an issue downloading the PDF. Please try again later.");
     }
   };
   
-  // New function to handle zip file download
+  
   const handleDownloadZip = () => {
     try {
-      // Use the relative path from the public directory
+     
       window.open("/pdf/IEEE Symposium-2025_Poster Template_LaTeX.zip", "_blank");
     } catch (error) {
       console.error("Error downloading ZIP file:", error);
