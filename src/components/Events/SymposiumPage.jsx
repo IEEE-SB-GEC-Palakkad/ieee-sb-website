@@ -25,7 +25,7 @@ const SymposiumPage = () => {
   const handleDownloadPDF = () => {
     try {
      
-      window.open("/pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf", "_blank");
+      window.open("/pdf/IEEE'_Symposium-2025.pdf", "_blank");
     } catch (error) {
       console.error("Error opening PDF:", error);
       alert("Sorry, there was an issue downloading the PDF. Please try again later.");
