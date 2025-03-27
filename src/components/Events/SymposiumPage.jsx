@@ -103,7 +103,7 @@ const SymposiumPage = () => {
 <li><strong>Encouraging Creativity:</strong> Explore emerging technologies with curiosity and innovation.</li>
 <li><strong>Paper Submission:</strong> Submit a one-page summary on topics like drives, control, robotics, AI, and computing.</li>
 <li><strong>Publication Opportunity:</strong> Selected summaries will be published in the Institute Symposium Proceedings.</li>
-<li><strong>Fostering Collaboration:</strong> Engage in  discussions and groundbreaking ideas to drive innovation.</li>
+<li><strong>Fostering Collaboration:</strong> Engage in insightful discussions and groundbreaking ideas to drive innovation.</li>
             </ul>
           </div>
           
