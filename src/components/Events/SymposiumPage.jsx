@@ -42,6 +42,16 @@ const SymposiumPage = () => {
       alert("Sorry, there was an issue downloading the ZIP file. Please try again later.");
     }
   };
+
+  const handleDownloadtemp = () => {
+    try {
+     
+      window.open("/pdf/IEEE_Symposium2025_Poster_Template_pdf.pdf", "_blank");
+    } catch (error) {
+      console.error("Error opening PDF:", error);
+      alert("Sorry, there was an issue downloading the PDF. Please try again later.");
+    }
+  };
   
   const openRegistrationForm = () => {
     window.open(registrationFormUrl, "_blank");
@@ -111,6 +121,15 @@ const SymposiumPage = () => {
               
               <button 
                 onClick={handleDownloadZip}
+                className="download-button bg-[#005F73] text-white py-2 px-6 rounded-full hover:bg-blue-700 shadow-md flex items-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                Download Resources
+              </button>
+              <button 
+                onClick={handleDownloadtemp}
                 className="download-button bg-[#005F73] text-white py-2 px-6 rounded-full hover:bg-blue-700 shadow-md flex items-center"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
