@@ -55,7 +55,7 @@ const Events = () => {
             <div className="event-actions">
               {isSymposium && (
                 <Link 
-                  to="/event/symposium" 
+                  to="/events/symposium" 
                   className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block"
                 >
                   View 
