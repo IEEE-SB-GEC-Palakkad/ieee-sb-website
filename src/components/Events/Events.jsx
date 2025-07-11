@@ -58,7 +58,7 @@ const Events = () => {
                   to="/event/symposium" 
                   className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block"
                 >
-                  View More
+                  View 
                 </Link>
               )}
             </div>
