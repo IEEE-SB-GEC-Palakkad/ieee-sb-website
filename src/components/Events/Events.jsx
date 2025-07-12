@@ -52,16 +52,7 @@ const Events = () => {
             <p className="event-description">{eventData[0][events].details}</p>
             
             {/* View More button - only for IEEE Symposium */}
-            <div className="event-actions">
-              {isSymposium && (
-                <Link 
-                  to="/events/symposium" 
-                  className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block"
-                >
-                  View 
-                </Link>
-              )}
-            </div>
+            
             
             <div className="nav-btn">
               <button onClick={handlePrevious}>
