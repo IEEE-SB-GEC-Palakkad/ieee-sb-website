@@ -142,4 +142,4 @@ const SymposiumPage = () => {
   );
 };
 
-export default SymposiumPage;
+export default Excelsior;
