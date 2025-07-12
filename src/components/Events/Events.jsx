@@ -38,7 +38,7 @@ const Events = () => {
   };
 
   
-  const isExcelsior = events === 1;
+  const isExcelsior = events === 0;
 
   return (
     <>
