@@ -85,8 +85,8 @@ const Events = () => {
                 image={fixImagePath(event.img)}
                 name={event.name} 
                 eventId={index}
-                showViewMore={index === 0} 
-                symposiumPage={index === 0} 
+                showViewMore={index === 1} 
+                isExcelsior={index === 1} 
               />
             </div>
           ))}
