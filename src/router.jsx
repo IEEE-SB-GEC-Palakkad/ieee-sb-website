@@ -8,7 +8,7 @@ import Execom23 from "./components/Execom23/Execom23";
 import Execom22 from "./components/Exicom22/Exicom22";
 import ArticleGrid from "./components/BlogSIte/ArticleGrid";
 import BlogComponent from "./components/BlogComponent/BlogComponent";
-import SymposiumPage from "./components/Events/Excelsior"; // Import the new component
+import Excelsior from "./components/Events/Excelsior"; // Import the new component
 
 const router = createBrowserRouter([
   {
