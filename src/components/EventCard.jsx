@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const EventCard = (props) => {
   
-  const isExcelsior = props.excelsior || false;
+  const isExcelsior = props.isExcelsior || false;
  
   const showViewMore = isExcelsior && props.showViewMore;
 
