@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const EventCard = (props) => {
   
-  const isExcelsior = props.isExcelsior || false;
+  const isExcelsior = !!props.isExcelsior;
  
-  const showViewMore = isExcelsior && props.showViewMore;
+  const showViewMore = isExcelsior && !!props.showViewMore;
 
   return (
     <div className="society-card w-52 h-auto p-3 sm:p-10 border-solid border-2 m-4 rounded-2xl flex flex-col justify-center items-center shadow-lg">
