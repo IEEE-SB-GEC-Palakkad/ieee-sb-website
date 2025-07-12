@@ -38,7 +38,7 @@ const Events = () => {
   };
 
   
-  const isSymposium = events === 0;
+  const isExcelsior = events === 1;
 
   return (
     <>
@@ -51,8 +51,14 @@ const Events = () => {
             </h3>
             <p className="event-description">{eventData[0][events].details}</p>
             
-            {/* View More button - only for IEEE Excelsior */}
-            <h3>COMING SOON...</h3>
+            {/* Coming Soon - only for IEEE Excelsior */}
+            
+            <div className="event-actions"> {isExcelsior && (
+               <Link to="/events/excelsior" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
+                COMING SOON
+              </Link> 
+              )} 
+            </div>
             
             <div className="nav-btn">
               <button onClick={handlePrevious}>
