@@ -8,7 +8,7 @@ import Heading from "../Heading";
 import EventCard from "../EventCard";
 
 const Events = () => {
-  const [events, setEvents] = useState(0);
+  const [events, setEvents] = useState(1);
 
   const [activeCardIndex, setActiveCardIndex] = useState(null);
   
