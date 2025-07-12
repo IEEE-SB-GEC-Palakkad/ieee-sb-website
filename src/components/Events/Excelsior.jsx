@@ -2,11 +2,11 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import eventData from "../../helpers/events.json";
 import Heading from "../Heading";
-import "./SymposiumPage.css";
+/*import "./SymposiumPage.css";
 
 const SymposiumPage = () => {
   const navigate = useNavigate();
-  const symposiumData = eventData[0][0];
+  const symposiumData = eventData[0][0];*/
   
   const registrationFormUrl = "https://forms.gle/wD9hB9RsrkQBfpMHA";
 
