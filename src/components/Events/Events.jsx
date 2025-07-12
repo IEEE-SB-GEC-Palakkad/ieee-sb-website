@@ -51,8 +51,8 @@ const Events = () => {
             </h3>
             <p className="event-description">{eventData[0][events].details}</p>
             
-            {/* View More button - only for IEEE Symposium */}
-            
+            {/* View More button - only for IEEE Excelsior */}
+            <h3>COMING SOON...</h3>
             
             <div className="nav-btn">
               <button onClick={handlePrevious}>
