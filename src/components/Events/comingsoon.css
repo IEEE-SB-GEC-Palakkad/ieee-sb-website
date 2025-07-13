@@ -9,6 +9,7 @@
   object-fit: cover; /* optional, for cropping control */
 }
 .glow-button {
+  display: inline-block;
     margin-top: 20px;
   background-color: #00567D;
   color: white;
@@ -27,18 +28,26 @@
   color: #fff;
 }
 .bounce-heading {
+  font-family: serif;
+  color:red;
+  font-size: 25px;
   animation: bounce 1.5s infinite;
   display: inline-block;
 }
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(10px);
   }
 
   50% {
     transform: translateY(-15px);
   }
+}
+.heading{
+  font-family: serif;
+  color: #00567D;
+  font-size: 25px;
 }
 
 

@@ -54,7 +54,7 @@ const Events = () => {
             {/* Coming Soon - only for IEEE Excelsior */}
             
             <div className="event-actions"> {isExcelsior && (
-               <Link to="/event/excelsior" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
+               <Link to="" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
                 COMING SOON
               </Link> 
               )} 
