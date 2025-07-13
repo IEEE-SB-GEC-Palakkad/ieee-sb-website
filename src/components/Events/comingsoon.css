@@ -1,0 +1,44 @@
+.pic-align{
+    text-align: center;
+    margin: auto;
+}
+.pic-align{
+    margin: auto;
+  width: 200px;     /* or any size like 50%, 10rem, etc. */
+  height: auto;     /* maintains aspect ratio */
+  object-fit: cover; /* optional, for cropping control */
+}
+.glow-button {
+    margin-top: 20px;
+  background-color: #00567D;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00567D;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 20px #00cfff, 0 0 30px #00cfff, 0 0 40px #00cfff;
+  background-color: #007ca6;
+  color: #fff;
+}
+.bounce-heading {
+  animation: bounce 1.5s infinite;
+  display: inline-block;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
