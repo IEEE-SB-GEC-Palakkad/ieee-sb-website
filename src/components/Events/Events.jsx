@@ -8,7 +8,7 @@ import Heading from "../Heading";
 import EventCard from "../EventCard";
 
 const Events = () => {
-  const [events, setEvents] = useState(1);
+  const [events, setEvents] = useState(4);
 
   const [activeCardIndex, setActiveCardIndex] = useState(null);
   
@@ -38,7 +38,7 @@ const Events = () => {
   };
 
   
-  const isExcelsior = events === 1;
+  const isExcelsior = events === 4;
 
   return (
     <>
@@ -54,8 +54,8 @@ const Events = () => {
             {/* Coming Soon - only for IEEE Excelsior */}
             
             <div className="event-actions"> {isExcelsior && (
-               <Link to="" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
-                COMING SOON
+               <Link to="/event/reise" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
+                Know More
               </Link> 
               )} 
             </div>

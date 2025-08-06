@@ -1,12 +1,15 @@
+
 .pic-align{
-    text-align: center;
-    margin: auto;
-}
-.pic-align{
-    margin: auto;
-  width: 200px;     /* or any size like 50%, 10rem, etc. */
-  height: auto;     /* maintains aspect ratio */
-  object-fit: cover; /* optional, for cropping control */
+  margin: auto;
+  width: auto;     /* or any size like 50%, 10rem, etc. */
+  height: auto; 
+  text-align:center;
+  padding:25px; 
+  border-style: solid;
+  border-width: 5px;
+  border-color:lightgrey;   /* maintains aspect ratio */
+  object-fit: cover;
+  border-radius:10%; /* optional, for cropping control */
 }
 .glow-button {
   display: inline-block;
@@ -33,6 +36,7 @@
   font-size: 25px;
   animation: bounce 1.5s infinite;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 @keyframes bounce {
@@ -48,6 +52,7 @@
   font-family: serif;
   color: #00567D;
   font-size: 25px;
+  margin-top: 20px;
 }
 
 

@@ -1,0 +1,47 @@
+.reise-container{
+    text-align: center;
+    padding:15px;
+}
+.images{
+    margin:auto;
+    height:70px;
+    width:auto;
+}
+.heading1{
+  font-family: serif;
+  color: #00567D;
+  font-size: 45px;
+  margin-top: 30px;
+}
+.head{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+p{
+    color:#00567D;
+    padding-bottom: 20px;
+}
+h1{
+    text-decoration: underline;
+    padding-top:25px;
+}
+.sc{
+    padding:15px;
+    background-color: #f0f8ff;
+    margin-top:20px;
+    margin-bottom: 25px;
+}
+li{
+    color:#00567D;
+}
+img{
+    height:auto;
+    width:400px;
+}
+span{
+    color: #00567D;
+    text-decoration: none;
+}

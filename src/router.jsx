@@ -8,7 +8,7 @@ import Execom23 from "./components/Execom23/Execom23";
 import Execom22 from "./components/Exicom22/Exicom22";
 import ArticleGrid from "./components/BlogSIte/ArticleGrid";
 import BlogComponent from "./components/BlogComponent/BlogComponent";
-import Excelsior from "./components/Events/Excelsior"; // Import the new component
+import Reise from "./components/Events/Reise"; // Import the new component
 
 const router = createBrowserRouter([
   {
@@ -40,8 +40,8 @@ const router = createBrowserRouter([
     element: <BlogComponent />,
   },
   {
-    path: "/event/excelsior", // New route for the Excelsior page
-    element: <Excelsior />,
+    path: "/event/reise", // New route for the Excelsior page
+    element: <Reise />,
   }
 ]);
 

@@ -20,6 +20,11 @@
             "name": "Upscale",
             "details": "Upscale is the flagship event conducted by IEEE SB GEC Palakkad, focusing on the exposure of the participants to different dimensions of entrepreneurship and start-up ideas. Shaping young minds to become efficient and professional entrepreneurs through a week long program.",
             "img": "images/upscale.png"
+        },
+        {
+            "name": "Reise",
+            "details": "Reise is the event conducted by IEEE SB GEC Palakkad, a two-day event specially crafted for a high school students to explore the exciting world of engineering.",
+            "img": "images/upscale.png"
         }
         
     ]

@@ -6,9 +6,9 @@ import React from "react";
 function ComingSoon() {
   return (
     <div className="pic-align">
-        <h1 className="bounce-heading">UPCOMING EVENT</h1>
-      <img className="event-pic" src={eventData[0][1].img} alt="Event" />
-      <h1 className="heading">EXCELSIOR 2025</h1>
+        <h1 className="bounce-heading">ONGOING EVENT</h1>
+      <h1 className="heading">REISE 2025</h1>
+      <h1 class="heading">August 7 - 8 2025</h1>
       <a href="#events" className="glow-button">Know more</a>
 
 
