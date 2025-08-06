@@ -9,7 +9,11 @@ function Reise() {
     <>
       <div>
         <div class="reise-container">
-          <img class="images" src="/images/reiselogo.png" />
+          <img
+            class="images"
+            src="/images/reiselogo.png"
+            alt="REISE event logo featuring stylized graphics representing science and technology, conveying a sense of innovation and excitement"
+          />
           <div class="head">
             <div>
               <strong><h1>Organized by</h1></strong>
@@ -17,7 +21,10 @@ function Reise() {
             </div>
             <div>
               <h1 class="heading1"> REISE 2025</h1>
-              <img src="/images/1000158423.jpg" />
+              <img
+                src="/images/1000158423.jpg"
+                alt="Group of students and organizers gathered in a classroom setting, engaged in interactive STEM activities. The environment is lively and collaborative, with posters and lab equipment visible. Text in image: REISE 2025"
+              />
             </div>
             <div>
               <strong><h1>In Association with</h1></strong>
@@ -54,9 +61,15 @@ function Reise() {
         </div>
         <div class="sc">
           <h1>OUR SESSIONS</h1>
-          <div class="head">
-            <img src="/images/1000158877.jpg" />
-            <img src="/images/1000159089.jpg" />
+          <div>
+            <img
+              src="/images/1000158877.jpg"
+              alt="Students participating in a hands-on science workshop, working together with lab equipment in a bright classroom. The atmosphere is energetic and focused, with facilitators guiding the activities"
+            />
+            <img
+              src="/images/1000159089.jpg"
+              alt="Students and instructors collaborating during an engineering session, surrounded by educational posters and tools. The mood is enthusiastic and supportive, highlighting teamwork and learning"
+            />
           </div>
         </div>
         <div class="reise-container">

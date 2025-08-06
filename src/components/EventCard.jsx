@@ -25,10 +25,10 @@ const EventCard = (props) => {
       
       {showViewMore && (
         <Link 
-          to=""
+          to="/event/reise"
           className="mt-3 px-3 py-1 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700"
         >
-          Coming Soon
+          Know More
         </Link>
       )}
     </div>
