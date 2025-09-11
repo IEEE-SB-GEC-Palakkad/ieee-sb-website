@@ -8,7 +8,7 @@ import Heading from "../Heading";
 import EventCard from "../EventCard";
 
 const Events = () => {
-  const [events, setEvents] = useState(4);
+  const [events, setEvents] = useState(1);
 
   const [activeCardIndex, setActiveCardIndex] = useState(null);
   
@@ -38,7 +38,7 @@ const Events = () => {
   };
 
   
-  const isExcelsior = events === 4;
+  const isExcelsior = events === 1;
 
   return (
     <>
@@ -54,7 +54,7 @@ const Events = () => {
             {/* Coming Soon - only for IEEE Excelsior */}
             
             <div className="event-actions"> {isExcelsior && (
-               <Link to="/event/reise" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
+               <Link to="https://www.yepdesk.com/embed/buy-tickets/68c1b79d46e0fb0001e38ab1/private/7khlo1ivnn" target="_blank" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
                 Know More
               </Link> 
               )} 
@@ -85,8 +85,8 @@ const Events = () => {
                 image={fixImagePath(event.img)}
                 name={event.name} 
                 eventId={index}
-                showViewMore={index === 4} 
-                isExcelsior={index === 4} 
+                showViewMore={index === 1} 
+                isExcelsior={index === 1} 
               />
             </div>
           ))}

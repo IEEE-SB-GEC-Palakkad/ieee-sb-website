@@ -8,6 +8,7 @@ const ExecomSection = () => {
       <div className="container mx-auto">
         <Heading text="EXECOM" />
         <div className="flex flex-wrap justify-around md:justify-between gap-8">
+          <ExecomBox year="2025" to="/execom25" />
           <ExecomBox year="2024" to="/execom" />
           <ExecomBox year="2023" to="/execom23" />
           <ExecomBox year="2022" to="/execom22" />
