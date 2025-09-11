@@ -8,6 +8,7 @@ import Execom23 from "./components/Execom23/Execom23";
 import Execom22 from "./components/Exicom22/Exicom22";
 import ArticleGrid from "./components/BlogSIte/ArticleGrid";
 import BlogComponent from "./components/BlogComponent/BlogComponent";
+import Execom25 from "./components/Execom25/Execom25";
 import Reise from "./components/Events/Reise"; // Import the new component
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/events",
     element: <EventsPage />,
+  },
+    {
+    path: "/execom25",
+    element: <Execom25 />,
   },
   {
     path: "/execom",

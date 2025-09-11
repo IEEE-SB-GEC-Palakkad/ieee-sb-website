@@ -1,58 +1,20 @@
-
-.pic-align{
-  margin: auto;
-  width: auto;     /* or any size like 50%, 10rem, etc. */
-  height: auto; 
+.con{
+  margin:auto;
   text-align:center;
-  padding:25px; 
-  border-style: solid;
-  border-width: 5px;
-  border-color:lightgrey;   /* maintains aspect ratio */
-  object-fit: cover;
-  border-radius:10%; /* optional, for cropping control */
 }
-.glow-button {
-  display: inline-block;
-    margin-top: 20px;
-  background-color: #00567D;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 9999px;
+/* Countdown gradient text */
+.countdown-text {
+  font-size: 2.5rem;
   font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 10px #00567D;
-  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
-.glow-button:hover {
-  box-shadow: 0 0 20px #00cfff, 0 0 30px #00cfff, 0 0 40px #00cfff;
-  background-color: #007ca6;
-  color: #fff;
-}
-.bounce-heading {
-  font-family: serif;
-  color:red;
-  font-size: 25px;
-  animation: bounce 1.5s infinite;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(10px);
-  }
-
-  50% {
-    transform: translateY(-15px);
-  }
-}
-.heading{
-  font-family: serif;
-  color: #00567D;
-  font-size: 25px;
-  margin-top: 20px;
+/* Left (image) side background */
+.bg-light {
+  background-color: #f9f9f9 !important;
 }
 
 
