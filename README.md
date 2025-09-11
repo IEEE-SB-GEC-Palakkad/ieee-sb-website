@@ -82,4 +82,4 @@ Review the following messages and see how many of the suggested guidelines they 
     empty commit messages
 
 ---
-
+---
