@@ -20,7 +20,7 @@ function ComingSoon() {
     return (
       <div className="row con">
         <div className="col-12 col-md-6 text-center">
-          <img src={Image} alt="Coming Soon" className="img-fluid" />
+          <img src={Image} alt="Coming Soon" />
         </div>
         <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center bg-dark">
           <div className="countdown-text">Time's up!</div>
