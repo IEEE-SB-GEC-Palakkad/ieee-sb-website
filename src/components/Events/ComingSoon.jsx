@@ -19,7 +19,7 @@ function ComingSoon() {
   if (timeLeft <= 0) {
     return (
       <div className="row con">
-        <div className="col-12 col-md-6 text-center bg-light">
+        <div className="col-12 col-md-6 text-center">
           <img src={Image} alt="Coming Soon" className="img-fluid" />
         </div>
         <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center bg-dark">
