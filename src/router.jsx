@@ -10,6 +10,7 @@ import ArticleGrid from "./components/BlogSIte/ArticleGrid";
 import BlogComponent from "./components/BlogComponent/BlogComponent";
 import Execom25 from "./components/Execom25/Execom25";
 import Reise from "./components/Events/Reise"; // Import the new component
+import Excelsior25 from "./components/Excelsior2025/Excelsior25";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: "/event/reise", // New route for the Excelsior page
     element: <Reise />,
+  }
+  {
+    path : "/excelsior",
+    element : <Excelsior25 />,
   }
 ]);
 
