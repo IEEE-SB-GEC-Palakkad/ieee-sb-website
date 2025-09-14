@@ -6,16 +6,16 @@ import left from "../../assets/images/left.png";
 import right from "../../assets/images/right.png";
 import Heading from "../Heading";
 import EventCard from "../EventCard";
-
+// https://www.yepdesk.com/excelsior25
 const Events = () => {
   const [events, setEvents] = useState(1);
 
   const [activeCardIndex, setActiveCardIndex] = useState(null);
-  
- 
+
+
   const totalEvents = eventData[0].length;
 
-  
+
   const handlePrevious = () => {
     setEvents((prevEvent) => (prevEvent - 1 + totalEvents) % totalEvents);
   };
@@ -24,12 +24,12 @@ const Events = () => {
     setEvents((prevEvent) => (prevEvent + 1) % totalEvents);
   };
 
- 
+
   const toggleViewMore = (index) => {
     setActiveCardIndex(activeCardIndex === index ? null : index);
   };
 
-  
+
   const fixImagePath = (path) => {
     if (!path) return "";
     if (path.startsWith("images/")) return path;
@@ -37,7 +37,7 @@ const Events = () => {
     return path;
   };
 
-  
+
   const isExcelsior = events === 1;
 
   return (
@@ -50,16 +50,16 @@ const Events = () => {
               {eventData[0][events].name}
             </h3>
             <p className="event-description">{eventData[0][events].details}</p>
-            
+
             {/* Coming Soon - only for IEEE Excelsior */}
-            
+
             <div className="event-actions"> {isExcelsior && (
-               <a href="https://www.yepdesk.com/excelsior25" target="_blank" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
+               <a href="https://www.yepdesk.com/excelsior25" target="_blank" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" >
                 Know More
-              </a> 
-              )} 
+              </a>
+              )}
             </div>
-            
+
             <div className="nav-btn">
               <button onClick={handlePrevious}>
                 <img src={left} className="w-10 my-2" alt="" />
@@ -70,10 +70,10 @@ const Events = () => {
             </div>
           </div>
           <div className="event-image w-1/3 flex justify-center items-center">
-            <img 
-              src={fixImagePath(eventData[0][events].img)} 
-              className="w-full" 
-              alt={eventData[0][events].name} 
+            <img
+              src={fixImagePath(eventData[0][events].img)}
+              className="w-full"
+              alt={eventData[0][events].name}
             />
           </div>
         </div>
@@ -81,12 +81,12 @@ const Events = () => {
         <div className="event-list-mobile flex flex-row flex-wrap justify-center items-center sm:hidden">
           {eventData[0].map((event, index) => (
             <div key={index} onClick={() => toggleViewMore(index)}>
-              <EventCard 
+              <EventCard
                 image={fixImagePath(event.img)}
-                name={event.name} 
+                name={event.name}
                 eventId={index}
-                showViewMore={index === 1} 
-                isExcelsior={index === 1} 
+                showViewMore={index === 1}
+                isExcelsior={index === 1}
               />
             </div>
           ))}

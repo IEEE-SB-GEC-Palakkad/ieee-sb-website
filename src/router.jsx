@@ -48,11 +48,12 @@ const router = createBrowserRouter([
   {
     path: "/event/reise", // New route for the Excelsior page
     element: <Reise />,
-  }
+  },
   {
     path : "/excelsior",
     element : <Excelsior25 />,
   }
+
 ]);
 
 export default router;
