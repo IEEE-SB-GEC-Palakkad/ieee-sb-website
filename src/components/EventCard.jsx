@@ -25,7 +25,7 @@ const EventCard = (props) => {
       
       {showViewMore && (
         <Link 
-          to="https://www.yepdesk.com/embed/buy-tickets/68c1b79d46e0fb0001e38ab1/private/7khlo1ivnn" target="_blank" 
+          to="src\components\Excelsior2025\excelsior25.html" target="_blank" 
           className="mt-3 px-3 py-1 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700"
         >
           Know More
