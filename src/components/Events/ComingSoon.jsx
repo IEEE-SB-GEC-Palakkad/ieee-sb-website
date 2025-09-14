@@ -24,7 +24,7 @@ function ComingSoon() {
         </div>
         <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center bg-dark">
           <div className="countdown-text">Time's up!</div>
-          <a to="https://www.yepdesk.com/embed/buy-tickets/68c1b79d46e0fb0001e38ab1/private/7khlo1ivnn" target="_blank" className="btn btn-primary mt-3">
+          <a to="src\components\Excelsior2025\excelsior25.html" target="_blank" className="btn btn-primary mt-3">
             Register Here
           </a>
         </div>
@@ -49,7 +49,7 @@ function ComingSoon() {
         <div className="countdown-text">
           {days}d {hours}h {minutes}m {seconds}s
         </div>
-        <Link to="https://www.yepdesk.com/embed/buy-tickets/68c1b79d46e0fb0001e38ab1/private/7khlo1ivnn" target="_blank" className="btn btn-primary mt-3">
+        <Link to="src\components\Excelsior2025\excelsior25.html" target="_blank" className="btn btn-primary mt-3">
           Register Here
         </Link>
       </div>
