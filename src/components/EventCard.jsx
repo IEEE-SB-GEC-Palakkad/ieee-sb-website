@@ -24,12 +24,12 @@ const EventCard = (props) => {
       </h3>
       
       {showViewMore && (
-        <Link 
-          href="https://excelsiorweb.vercel.app/" target="_blank" 
+        <a 
+          href="https://excelsiorweb.vercel.app/"  target="_blank" 
           className="mt-3 px-3 py-1 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700"
         >
           Know More
-        </Link>
+        </a>
       )}
     </div>
   );
