@@ -25,7 +25,7 @@ const EventCard = (props) => {
       
       {showViewMore && (
         <Link 
-          to="src/components/Events/Excelsior2025/excelsior25.html" target="_blank" 
+          to="src\components\Excelsior2025\excelsior25.html" target="_blank" 
           className="mt-3 px-3 py-1 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700"
         >
           Know More
