@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>EXCELSIOR'25 • Rise Above the Rest</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Manrope:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="excelsior25.css" />
+      <style>
+    .faq-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 10px 20px;
+    }
+    .faq-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .faq-item {
+      margin-bottom: 40px;
+    }
+    .faq-question {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .faq-answer {
+      font-size: 1rem;
+      line-height: 1.6;
+      border-left: 2px solid #aaa;
+      padding-left: 15px;
+      color: #ddd;
+    }
+    /* Optional: two-column layout for Q/A */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+        @media (max-width: 768px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    footer {
+      background-color: #111;
+      padding: 40px 20px 20px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .footer-column h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-column ul li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+    }
+    .footer-column ul li::before {
+      content: "●";
+      color: #3fbf5a; /* green bullet */
+      margin-right: 8px;
+      font-size: 0.8rem;
+    }
+    .footer-column p {
+      line-height: 1.6;
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #333;
+      padding-top: 15px;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 768px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        text-align: left;
+      }
+      .footer-column {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+  </head>
+  <body class="theme-dream">
+    <!-- Splash Screen -->
+    <div id="splash" aria-hidden="true">
+      <div class="splash-core">
+        <h1 class="splash-title">EXCELSIOR'25</h1>
+        <div class="splash-bar"><span></span></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="nav">
+      <a class="brand" href="#" aria-label="Excelsior Home">
+        <span class="brand-mark">✶</span> EXCELSIOR'25
+      </a>
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="register.html" class="btn btn-ghost">Register</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main id="hero" class="hero">
+      <div class="hero-wrap">
+        <div class="hero-left">
+          <p class="eyebrow">IEEE SB GECPKD • Tech-Cultural Event</p>
+          <h1 class="hero-title">EXCELSIOR' 25<br /></h1>
+          <h2><span class="title-accent">Rise Above the Rest</span></h2>
+          <h6 class="hero-date" role="text" aria-label="Event dates">
+            September 27–29, 2025 • Government Engineering College, Palakkad
+          </h6>
+          <p class="hero-sub">
+            A liminal, luminous space where ideas float, designed to provide
+            students with hands-on exposure to modern technologies, insightful
+            talks from industry experts, and workshops that equip them with
+            essential technical and professional skills.
+          </p>
+          <div class="cta-row">
+            <a
+              class="btn btn-primary"
+              href="https://www.yepdesk.com/embed/buy-tickets/68c1b79d46e0fb0001e38ab1/private/7khlo1ivnn"
+              target="_blank"
+              >Register Now</a
+            >
+          </div>
+        </div>
+        <div class="hero-right">
+        <div class="">
+          <img style="opacity:90%;margin-left:auto;margin-right:auto;display:block;max-width:100%;height:auto;"
+            src="EX'25 Logo.png"
+            alt="Dreamy neon hallway"
+            class="card-img"/>
+        </div>
+      </div>
+    </main>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-inner glass">
+        <h2 class="section-title">What is Excelsior?</h2>
+        <p class="section-copy">
+          A three-day celebration of technology, creativity, and community. We
+          blend workshops, competitions, and performances in a space designed to
+          feel
+          <em>beautifully in-between</em>—soft edges, floating light, and room
+          to dream.
+        </p>
+        <div class="tiles">
+          <div class="tile glass">
+            <img
+              src="1000131263.jpg"
+              alt="Workshop vibe"
+            />
+            <h3>Workshops</h3>
+            <p>Hands-on labs that glow with curiosity and collaboration.</p>
+          </div>
+          <div class="tile glass">
+            <img
+              src="1000131261.jpg"
+              alt="Stage lights"
+            />
+            <h3>Performances</h3>
+            <p>Stages that shimmer—music, art, and stories under neon haze.</p>
+          </div>
+          <div class="tile glass">
+            <img
+              src="1000131254.jpg"
+              alt="Hackathon night"
+            />
+            <h3>Build Nights</h3>
+            <p>Late nights, bright minds, and that soft hum of becoming.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+  id="carouselExampleControls"
+  class="carousel slide"
+  data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-block text-center p-5">
+        <div class="container" >
+          <div class="activity-card">
+            <h3>Multiple technical workshops on trending domains (AI/ML,LLM,Cyber security,IOT, etc)</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-block text-center p-5">
+        <div class="container" >
+          <div class="activity-card">
+            <h3>Expert talk sessions and panel discussions with industriak professionals and researchers</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-block text-center p-5">
+        <div class="container" >
+          <div class="activity-card">
+            <h3>Networking oppurtunity with students and faculties from multiple colleges.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-block text-center p-5">
+        <div class="container" >
+          <div class="activity-card">
+            <h3>Cultural interactions and community-building sessions.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a
+    class="carousel-control-prev"
+    href="#carouselExampleControls"
+    role="button"
+    data-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a
+    class="carousel-control-next"
+    href="#carouselExampleControls"
+    role="button"
+    data-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        <div class="schedule-container">
+            <h2 class="section-title center">SCHEDULE</h2>
+            <div class="schedule-items">
+                <article class="schedule-card day-1">
+                    <h3 class="schedule-day">Day 1</h3>
+                    <div class="schedule-content">
+                        <ul class="schedule-list">
+                            <li>
+                                <span class="schedule-time">5:30 pm - 6:30 pm</span>
+                                <p class="schedule-event">Inauguration</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">6:30 pm - 7:30 pm</span>
+                                <p class="schedule-event">Ice breaking <br> Game</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">7:30 pm - 8:30 pm</span>
+                                <p class="schedule-event">Dinner</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">8:30 pm - 9:00 pm</span>
+                                <p class="schedule-event">Cultural Events</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="schedule-card day-2">
+                    <h3 class="schedule-day">Day 2</h3>
+                    <div class="schedule-content">
+                        <ul class="schedule-list">
+                            <li>
+                                <span class="schedule-time">6:30 am - 8:30 am</span>
+                                <p class="schedule-event">Jogging</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">8:30 am - 9:00 am</span>
+                                <p class="schedule-event">Fresh Up</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">9:00 am - 10:00 am</span>
+                                <p class="schedule-event">Breakfast</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">10:00 am - 12:30pm</span>
+                                <p class="schedule-event">Workshop I</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">12:30 pm - 1:30pm</span>
+                                <p class="schedule-event">Lunch</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">1:30 pm - 3:00pm</span>
+                                <p class="schedule-event">Workshop II</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">3:00 pm - 4:00pm</span>
+                                <p class="schedule-event">Talk Session I</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">4:00 pm - 5:00pm</span>
+                                <p class="schedule-event">Games and Tea Break</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">5:00 pm - 7:00pm</span>
+                                <p class="schedule-event">Mentalism</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">7:00 pm - 8:00pm</span>
+                                <p class="schedule-event">Dinner</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">8:00 pm - 9:00pm</span>
+                                <p class="schedule-event">Networking Session</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="schedule-card day-3">
+                    <h3 class="schedule-day">Day 3</h3>
+                    <div class="schedule-content">
+                        <ul class="schedule-list">
+                            <li>
+                                <span class="schedule-time">8:30 am - 9:30 am</span>
+                                <p class="schedule-event">Breakfast</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">9:30 am - 10:30 am</span>
+                                <p class="schedule-event">Talk Session II</p>
+                            </li>
+                            <li>
+                                <span class="schedule-time">10:30 am - 11:30 am</span>
+                                <p class="schedule-event">Closing Ceremony + Tea</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+      </section>
+  <div class="faq-container">
+    <div class="faq-title">FAQ</div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-question">Who all can participate in the event ?</div>
+        <div class="faq-answer">
+          There is no specific criteria for participation. Anyone interested can participate in the event.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Should I register for each event separately ?</div>
+        <div class="faq-answer">
+          It is your preference that matters. You can join for more than an event in Excelsior’25 provided you abide by the terms and conditions. For the same reason we have provided packages which is a mixture of events. You can choose package according to your taste and preference.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Will I be refunded if I decide to cancel my registration ?</div>
+        <div class="faq-answer">
+          Refund policies depend on the terms and conditions of the event. Please refer to the official refund guidelines before registering.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is food and accomodation available?</div>
+        <div class="faq-answer">
+          Yes, it is included in the ticket price
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <!-- Useful Links -->
+      <div class="footer-column">
+        <h3>USEFUL LINKS</h3>
+        <ul>
+          <li><a href="https://ieee-sb.vercel.app/">@ieeesbgecpkd</a></li>
+          <li><a href="https://www.instagram.com/ieeesbgecpkd/">ieeesbgecpkd</a></li>
+          <li ><a href="https://www.ieee.org/">IEEE</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="footer-column">
+        <h3>CONTACT US</h3>
+        <p>Devika V R: +91 9496967500</p>
+        <p>Ansaaf: +91 8921840950</p>
+        <p>Fidha: +91 7034358860</p>
+        <p>Email: ieee@gecskp.ac.in</p>
+      </div>
+
+      <!-- About -->
+      <div class="footer-column">
+        <h3>ABOUT IEEE SB GEC PKD</h3>
+        <p>
+          The IEEE Students branch of Government Engineering College Palakkad,
+          works for providing an ideal platform for young minds to nourish their
+          technical skills as an engineer by providing a technical home. The SB
+          comprises actively working with IAS, ComSoc, and Computer Society and
+          also the WiE affinity group in association for achieving the objectives.
+        </p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      Copyright © 2025 IEEE SB GECPKD. All Rights Reserved
+    </div>
+  </footer>
+
+
+<script src="script.js"></script>
+
+<!-- jQuery -->
+<script 
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+  crossorigin="anonymous"></script>
+
+<!-- Popper.js (for Bootstrap tooltips, dropdowns, etc.) -->
+<script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+  crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script 
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+  crossorigin="anonymous"></script>
+
+  </body>
+</html>
