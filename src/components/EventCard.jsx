@@ -25,7 +25,8 @@ const EventCard = (props) => {
       
       {showViewMore && (
         <a 
-          href="https://excelsiorweb.vercel.app/"  target="_blank" 
+          href="https://excelsiorweb.vercel.app/"  target="_blank"
+          rel="noopener noreferrer"
           className="mt-3 px-3 py-1 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700"
         >
           Know More
