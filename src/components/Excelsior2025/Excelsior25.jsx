@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./excelsior25.css"; // your CSS file, move into src
+import "./components/Excelsior2025/excelsior25.css"; // your CSS file, move into src
 
 const Excelsior25 = () => {
   // === Effects for splash screen, sparkles, counters, registration ===
