@@ -54,9 +54,9 @@ const Events = () => {
             {/* Coming Soon - only for IEEE Excelsior */}
             
             <div className="event-actions"> {isExcelsior && (
-               <Link to="https://www.yepdesk.com/excelsior25" target="_blank" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
+               <a href="https://www.yepdesk.com/excelsior25" target="_blank" className="btn my-3 px-4 rounded-full shadow-md hover:text-white bg-[#00567D] inline-block" > 
                 Know More
-              </Link> 
+              </a> 
               )} 
             </div>
             
