@@ -16,7 +16,8 @@ const ACHIEVEMENTS_DATA = [
     name: "Adhil Jahan M B",
     details: [
       "Outstanding Student Volunteer Special Mention 2026 - (Malabar Sub Section)",
-      "IEEE ComSoc Kerala Chapter SLT 2025 (Designer)"
+      "IEEE ComSoc Kerala Chapter SLT 2025 (Designer)",
+      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference"
     ],
     img: "/images/achievements/adhil.png"
   },
@@ -67,6 +68,60 @@ const ACHIEVEMENTS_DATA = [
     name: "Devika P Dinesh",
     details: ["IEEE COMPUTE Graphic Designer"],
     img: "/images/achievements/devikapdinesh.png"
+  },
+  {
+    name: "Nayana G",
+    details: ["Selected as Xtreme Ambassador 19.0"],
+    img: null
+  },
+  {
+    name: "Mohammed Thamjeed",
+    details: ["VSB SAC Marketing Team"],
+    img: null
+  },
+  {
+    name: "Dr. Dhanya K M",
+    details: ["Outstanding SB Counselor Award MSS"],
+    img: null
+  },
+  {
+    name: "IEEE SB Gec Palakkad",
+    details: ["Most Vibrant IEEE Student Branch in MSS"],
+    img: null
+  },
+  {
+    name: "Gauiri Shankar",
+    details: ["Computer Society Volunteer Team(Designer)"],
+    img: null
+  },
+  {
+    name: "Adnan Rasheed",
+    details: ["HTB Project Coordinator"],
+    img: null
+  },
+  {
+    name: "Fidha Fathima Kiliyamannil",
+    details: ["Malabar Hub Student Co-Representative"],
+    img: null
+  },
+  {
+    name: "Harikrishnan Rajesh",
+    details: ["Communication Lead for Procomm-Tems"],
+    img: null
+  },
+  {
+    name: "Namiya Abdul Assiz",
+    details: [
+      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference"
+    ],
+    img: null
+  },
+  {
+    name: "Sneha R",
+    details: [
+      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference"
+    ],
+    img: null
   }
 ];
 
@@ -106,16 +161,28 @@ const Achievements = () => {
                 <div className="space-y-3 sm:space-y-6">
                   {/* Image & Ribbon Container */}
                   <div className="relative w-full aspect-square overflow-hidden rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center">
-                    <img
-                      src={achievement.img}
-                      alt={achievement.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src =
-                          "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 250 250'><rect width='100%' height='100%' fill='%23f1f5f9'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='14' fill='%2394a3b8'>Achievement</text></svg>";
-                      }}
-                    />
+                    {achievement.img ? (
+                      <img
+                        src={achievement.img}
+                        alt={achievement.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src =
+                            "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 250 250'><rect width='100%' height='100%' fill='%23e2e8f0'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='14' fill='%2394a3b8'>Achievement</text></svg>";
+                        }}
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-slate-200/70 flex flex-col items-center justify-center text-slate-400 group-hover:scale-105 transition-transform duration-500">
+                        <svg
+                          className="w-14 h-14 sm:w-16 sm:h-16 text-slate-300"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
+                      </div>
+                    )}
                     {/* Badge */}
                     <div className="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#0f172a] text-white p-1 sm:p-2 rounded-full shadow-md z-10 flex items-center justify-center">
                       <Award className="w-3 h-3 sm:w-4 sm:h-4 text-sky-400" />
