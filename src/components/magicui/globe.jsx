@@ -1,4 +1,7 @@
 "use client";
+/* eslint-disable react-hooks/immutability, react-hooks/exhaustive-deps */
+// Globe.jsx uses intentionally mutable `phi` and `width` as animation frame
+// accumulators for the cobe library — these are not React state by design.
 
 import { useCallback, useEffect, useRef } from "react";
 import createGlobe from "cobe";
@@ -30,14 +33,11 @@ const GLOBE_CONFIG = {
     { location: [19.4326, -99.1332], size: 0.1 },
     { location: [40.7128, -74.006], size: 0.1 },
     { location: [34.6937, 135.5022], size: 0.05 },
-    { location: [41.0082, 28.9784], size: 0.06 },
-  ],
+    { location: [41.0082, 28.9784], size: 0.06 }
+  ]
 };
 
-export default function Globe({
-  className,
-  config = GLOBE_CONFIG
-}) {
+export default function Globe({ className, config = GLOBE_CONFIG }) {
   let phi = 0;
   let width = 0;
   const canvasRef = useRef(null);
@@ -49,8 +49,8 @@ export default function Globe({
       mass: 1,
       tension: 280,
       friction: 40,
-      precision: 0.001,
-    },
+      precision: 0.001
+    }
   }));
 
   const updatePointerInteraction = (value) => {
@@ -66,12 +66,15 @@ export default function Globe({
     }
   };
 
-  const onRender = useCallback((state) => {
-    if (!pointerInteracting.current) phi += 0.005;
-    state.phi = phi + r.get();
-    state.width = width * 2;
-    state.height = width * 2;
-  }, [pointerInteracting, phi, r]);
+  const onRender = useCallback(
+    (state) => {
+      if (!pointerInteracting.current) phi += 0.005;
+      state.phi = phi + r.get();
+      state.width = width * 2;
+      state.height = width * 2;
+    },
+    [pointerInteracting, phi, r]
+  );
 
   const onResize = () => {
     if (canvasRef.current) {
@@ -87,7 +90,7 @@ export default function Globe({
       ...config,
       width: width * 2,
       height: width * 2,
-      onRender,
+      onRender
     });
 
     setTimeout(() => (canvasRef.current.style.opacity = "1"));
@@ -95,22 +98,29 @@ export default function Globe({
   }, []);
 
   return (
-    (<div
-      className={cn("absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]", className)}>
+    <div
+      className={cn(
+        "absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]",
+        className
+      )}
+    >
       <canvas
         className={cn(
           "h-full w-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]"
         )}
         ref={canvasRef}
         onPointerDown={(e) =>
-          updatePointerInteraction(e.clientX - pointerInteractionMovement.current)
+          updatePointerInteraction(
+            e.clientX - pointerInteractionMovement.current
+          )
         }
         onPointerUp={() => updatePointerInteraction(null)}
         onPointerOut={() => updatePointerInteraction(null)}
         onMouseMove={(e) => updateMovement(e.clientX)}
         onTouchMove={(e) =>
           e.touches[0] && updateMovement(e.touches[0].clientX)
-        } />
-    </div>)
+        }
+      />
+    </div>
   );
 }

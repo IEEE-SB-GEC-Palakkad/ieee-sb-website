@@ -9,8 +9,8 @@ const MobileNavbar = ({ menu, setMenu }) => {
     from: { opacity: 0, position: "fixed", left: "-100%", top: "0" },
     to: {
       opacity: 1,
-      left: "0",
-    },
+      left: "0"
+    }
   });
 
   return (
@@ -41,9 +41,6 @@ const MobileNavbar = ({ menu, setMenu }) => {
           </a>
           <a onClick={() => setMenu(false)} href="/#contact">
             Contact
-          </a>
-          <a onClick={() => setMenu(false)} href="/blog">
-            Blog
           </a>
         </div>
       </animated.div>

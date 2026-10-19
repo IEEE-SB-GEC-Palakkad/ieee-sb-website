@@ -2,23 +2,24 @@
 
 @font-face {
   font-family: "Monument Extended Regular";
-  src: local("Monument Extended Regular"),
+  src:
+    local("Monument Extended Regular"),
     url("./assets/fonts/MonumentExtended-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Monument Extended UltraBold";
-  src: local("Monument Extended UltraBold"),
+  src:
+    local("Monument Extended UltraBold"),
     url("./assets/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
 }
 
 * {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  color: beige;
 }
 
 .heading {
   font-family: "Monument Extended Regular";
-  color: #00567d;
+  color: #0f172a;
 }

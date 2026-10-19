@@ -1,40 +1,51 @@
 import React from "react";
 import Achievements from "../components/Achievements/Achievements";
 import Banner from "../components/Banner/Banner";
-import Events from "../components/Events/Events";
-import Societies from "../components/Socities/Societies";
-import Welcome from "../components/Welcome/Welcome";
-import Upthinq from "../components/Upthinq/Upthinq";
+import Events from "../components/Events/EventsHub/Events";
+import Societies from "../components/Societies/Societies";
+
 import Hero from "../components/Hero/Hero";
 import ExecomSection from "../components/ExecomSection/ExecomSection";
 import GallerySection from "../components/GallerySection/GallerySection";
 import InfoSection from "@/components/InfoSection/InfoSection";
-import Spacer from "@/components/Spacer";
-import ComingSoon from "@/components/Events/ComingSoon"
+import ScrollReveal3D from "../components/Common/ScrollReveal3D";
 
 const HomePage = () => {
+  React.useEffect(() => {
+    document.title = "IEEE SB GEC Palakkad";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        "content",
+        "Official website of the IEEE Student Branch, Government Engineering College Palakkad. Explore our technical societies, events, executive committee, and achievements."
+      );
+    }
+  }, []);
+
   return (
     <>
       <Banner />
-      <div className="sm:container sm:px-20 flex flex-col justify-center items-start">
-          <Hero />
-          <Spacer />
-          <ComingSoon />
-          <Spacer />
+      <main className="w-full flex flex-col bg-white min-h-screen scroll-3d-container">
+        <Hero />
+        <ScrollReveal3D>
           <Societies />
-          <Spacer />
+        </ScrollReveal3D>
+        <ScrollReveal3D>
           <Events />
-           <Spacer /> 
-          <Achievements /> 
-          <Spacer />
+        </ScrollReveal3D>
+        <ScrollReveal3D>
+          <Achievements />
+        </ScrollReveal3D>
+        <ScrollReveal3D>
           <GallerySection />
-          <Spacer/>
+        </ScrollReveal3D>
+        <ScrollReveal3D>
           <ExecomSection />
-          <Spacer/>
+        </ScrollReveal3D>
+        <ScrollReveal3D>
           <InfoSection />
-          {/* <Upthinq/> */}
-          {/* <Gallery/> */}  
-      </div>
+        </ScrollReveal3D>
+      </main>
     </>
   );
 };

@@ -1,85 +1,90 @@
-# IEEE Website
-Official Website of **IEEE SB GEC Palakkad**.
+# IEEE SB GEC Palakkad Website
 
-Read the below *Contributions Guide* to write better commit messages. Have Fun!
+The official website of the **IEEE Student Branch, Government Engineering College, Palakkad**.
 
----
-## Preview or Run the React App
-
-So, you wanna try the site out yourself? Here's the way
-
-I'm using `yarn` as my package manager and also `vite` as the build tool, cause why not!?
-
-Here you go
-1. Install the dependencies
-    ```
-        yarn
-    ```
-2. Run the server
-   ```
-        yarn run dev
-   ```
-
-By default this will run the app on `localhost:5173`
+Developed with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**.
 
 ---
 
-## Contributions Guide
-### 101 - Writing better commits
+## 🚀 Getting Started
 
-The following content is taken form a freeCodeCamp article ([refer this link](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/))
+To run the project locally or preview production builds, ensure you have [Node.js](https://nodejs.org/) installed. We use **npm** as our primary package manager.
 
+### 1. Install Dependencies
 
+```bash
+npm install
+```
 
-**Conventional Commits**
+### 2. Run Local Development Server
 
-Now that we've covered basic commit structure of a good commit message, I'd like to introduce Conventional Commits to help provide some detail on creating solid commit messages.
+```bash
+npm run dev
+```
 
-At D2iQ, we use Conventional Commit which is a great practice among engineering teams. Conventional Commit is a formatting convention that provides a set of rules to formulate a consistent commit message structure like so:
+By default, the server runs on [http://localhost:5173](http://localhost:5173).
+
+### 3. Code Formatting
+
+To format the codebase using **Prettier**, run:
+
+```bash
+npm run format
+```
+
+### 4. Build for Production
+
+To generate static production files under `dist/`, run:
+
+```bash
+npm run build
+```
+
+---
+
+## 📂 Project Structure
+
+A clean, standardized folder hierarchy is maintained across the repository:
+
+- **`src/components/`**: Modular page sections and layouts.
+  - **`Common/`**: Reusable common utilities like headings and scroll reveal elements.
+  - **`Events/`**: Dedicated subfolders containing page components and assets for past workshops (e.g., `EventsHub`, `Excelsior2025`, `Reise`).
+  - **`Execom/`**: Executive committee grid layouts organized by year.
+  - **`Societies/`**: Cards and directories highlighting IEEE technical societies.
+- **`src/pages/`**: Primary page shells mapped by the router (`HomePage`, `EventsPage`, `ExecomPage`).
+- **`public/`**: Public assets and site photos under `/images/`.
+- **`src/assets/images/`**: High-priority vector and raster logo assets resolved at compilation.
+
+---
+
+## 🤝 Contributions Guide
+
+### Writing Better Commit Messages
+
+We adhere to the **Conventional Commits** specification. This formatting standard ensures a readable, structured Git log history.
+
+#### Format
 
 ```
 <type>[optional scope]: <description>
+
 [optional body]
 [optional footer(s)]
 ```
 
-The commit type can include the following:
+#### Commit Types
 
-    feat – a new feature is introduced with the changes
-    fix – a bug fix has occurred
-    chore – changes that do not relate to a fix or feature and don't modify src or test files (for example updating dependencies)
-    refactor – refactored code that neither fixes a bug nor adds a feature
-    docs – updates to documentation such as a the README or other markdown files
-    style – changes that do not affect the meaning of the code, likely related to code formatting such as white-space, missing semi-colons, and so on.
-    test – including new or correcting previous tests
-    perf – performance improvements
-    ci – continuous integration related
-    build – changes that affect the build system or external dependencies
-    revert – reverts a previous commit 
+- **`feat`** – Introduces a new feature to the codebase.
+- **`fix`** – Corrects a bug or layout error.
+- **`docs`** – Updates to documentation (such as the `README.md`).
+- **`style`** – Formatting changes (white-space, semi-colons) that do not affect runtime behavior.
+- **`refactor`** – Code changes that neither fix a bug nor introduce a feature.
+- **`perf`** – Performance optimizations.
+- **`build`** – Changes to the build system, Vite configurations, or external dev dependencies.
+- **`chore`** – Repetitive maintenance tasks (updating node modules, formatting scripts).
 
-The commit type subject line should be all lowercase with a character limit to encourage succinct descriptions.
+#### Examples
 
-The optional commit body should be used to provide further detail that cannot fit within the character limitations of the subject line description.
-
----
-### Commit Message Comparisons
-
-Review the following messages and see how many of the suggested guidelines they check off in each category.
-
-**Good**
-
-    feat: improve performance with lazy load implementation for images
-    chore: update npm dependency to latest version
-    Fix bug preventing users from submitting the subscribe form
-    Update incorrect client phone number within footer body per client request
-
-**Bad**
-
-    fixed bug on landing page
-    Changed style
-    oops
-    I think I fixed it this time?
-    empty commit messages
-
----
----
+- **Good:** `feat: integrate full-screen lightbox overlay on media gallery`
+- **Good:** `style: format codebase with Prettier format script`
+- **Bad:** `fixed some stuff`

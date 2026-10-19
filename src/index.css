@@ -74,7 +74,169 @@
   * {
     @apply border-border;
   }
+  html,
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    max-width: 100%;
   }
+}
+
+/* 3D Scroll Reveal Animation Classes */
+.scroll-3d-container {
+  perspective: 1200px;
+  perspective-origin: 50% 30%;
+}
+
+.scroll-3d-item {
+  opacity: 0;
+  transform: rotateX(12deg) translateZ(-60px) translateY(50px);
+  transform-origin: 50% 0%;
+  transition:
+    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.scroll-3d-item.is-visible {
+  opacity: 1;
+  transform: rotateX(0deg) translateZ(0px) translateY(0px);
+}
+
+/* Expandable Container and Row-blur Utilities */
+.expandable-container {
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: max-height;
+}
+
+/* Achievements grid collapse heights */
+.achievements-container.collapsed {
+  max-height: 520px; /* Mobile (1 card + a bit of second) */
+}
+@media (min-width: 640px) {
+  .achievements-container.collapsed {
+    max-height: 600px; /* Tablet (1 row + a bit of second) */
+  }
+}
+@media (min-width: 1024px) {
+  .achievements-container.collapsed {
+    max-height: 620px; /* Desktop (1 row + a bit of second) */
+  }
+}
+
+.achievements-container.expanded {
+  max-height: 2000px; /* Safe upper bound for achievements grid */
+}
+
+/* Gallery grid collapse heights */
+.gallery-container.collapsed {
+  max-height: 380px; /* Mobile */
+}
+@media (min-width: 640px) {
+  .gallery-container.collapsed {
+    max-height: 320px; /* Tablet 2-col */
+  }
+}
+@media (min-width: 768px) {
+  .gallery-container.collapsed {
+    max-height: 350px; /* Desktop 3-col */
+  }
+}
+
+.gallery-container.expanded {
+  max-height: 2500px; /* Safe upper bound for gallery grid */
+}
+
+/* Row blur effects when collapsed */
+/* Achievements blur: default mobile (nth-child n+2) */
+.achievements-grid.collapsed > div:nth-child(n + 2) {
+  opacity: 0.3;
+  filter: blur(2px);
+  pointer-events: none;
+  transition:
+    opacity 0.5s ease,
+    filter 0.5s ease;
+}
+@media (min-width: 640px) {
+  .achievements-grid.collapsed > div:nth-child(n + 2) {
+    opacity: 1;
+    filter: none;
+    pointer-events: auto;
+  }
+  .achievements-grid.collapsed > div:nth-child(n + 3) {
+    opacity: 0.3;
+    filter: blur(2px);
+    pointer-events: none;
+  }
+}
+@media (min-width: 1024px) {
+  .achievements-grid.collapsed > div:nth-child(n + 3) {
+    opacity: 1;
+    filter: none;
+    pointer-events: auto;
+  }
+  .achievements-grid.collapsed > div:nth-child(n + 4) {
+    opacity: 0.3;
+    filter: blur(2px);
+    pointer-events: none;
+  }
+}
+@media (min-width: 1280px) {
+  .achievements-grid.collapsed > div:nth-child(n + 4) {
+    opacity: 1;
+    filter: none;
+    pointer-events: auto;
+  }
+  .achievements-grid.collapsed > div:nth-child(n + 5) {
+    opacity: 0.3;
+    filter: blur(2px);
+    pointer-events: none;
+  }
+}
+
+/* Gallery blur: default mobile (nth-child n+2) */
+.gallery-grid.collapsed > div:nth-child(n + 2) {
+  opacity: 0.3;
+  filter: blur(2.5px);
+  pointer-events: none;
+  transition:
+    opacity 0.5s ease,
+    filter 0.5s ease;
+}
+@media (min-width: 640px) {
+  .gallery-grid.collapsed > div:nth-child(n + 2) {
+    opacity: 1;
+    filter: none;
+    pointer-events: auto;
+  }
+  .gallery-grid.collapsed > div:nth-child(n + 3) {
+    opacity: 0.3;
+    filter: blur(2.5px);
+    pointer-events: none;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-grid.collapsed > div:nth-child(n + 3) {
+    opacity: 1;
+    filter: none;
+    pointer-events: auto;
+  }
+  .gallery-grid.collapsed > div:nth-child(n + 4) {
+    opacity: 0.3;
+    filter: blur(2.5px);
+    pointer-events: none;
+  }
+}
+
+/* Transition to clean state when expanded */
+.achievements-grid.expanded > div,
+.gallery-grid.expanded > div {
+  opacity: 1;
+  filter: none;
+  pointer-events: auto;
+  transition:
+    opacity 0.5s ease,
+    filter 0.5s ease;
 }

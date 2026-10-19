@@ -1,6 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!-- SPA GitHub Pages: decode the path encoded by 404.html before React Router starts -->
+    <script>
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            });
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) +
+              decoded[0] +
+              (decoded[1] ? "?" + decoded[1] : "") +
+              l.hash
+          );
+        }
+      })(window.location);
+    </script>
+
+    <!-- ── Charset & Viewport ──────────────────────────────────────────── -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ── Primary SEO ────────────────────────────────────────────────── -->
+    <title>IEEE SB GEC Palakkad</title>
+    <meta
+      name="description"
+      content="Official website of the IEEE Student Branch, Government Engineering College Palakkad. Explore our technical societies, events, executive committee, and achievements."
+    />
+    <meta
+      name="keywords"
+      content="IEEE, Student Branch, GEC Palakkad, Government Engineering College, IEEE SB, Computer Society, ComSoc, IAS, WIE, SIGHT, Kerala, engineering, technology"
+    />
+    <meta name="author" content="IEEE SB GEC Palakkad" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ieee.gecpkd.ac.in/" />
+
+    <!-- ── Open Graph (Facebook / LinkedIn / WhatsApp) ────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IEEE SB GEC Palakkad" />
+    <meta property="og:url" content="https://ieee.gecpkd.ac.in/" />
+    <meta property="og:title" content="IEEE SB GEC Palakkad — Student Branch" />
+    <meta
+      property="og:description"
+      content="Official website of the IEEE Student Branch, Government Engineering College Palakkad. Explore our technical societies, events, executive committee, and achievements."
+    />
+    <meta
+      property="og:image"
+      content="https://ieee.gecpkd.ac.in/images/og-cover.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- ── Twitter Card ────────────────────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@IEEESBGECPkd" />
+    <meta
+      name="twitter:title"
+      content="IEEE SB GEC Palakkad — Student Branch"
+    />
+    <meta
+      name="twitter:description"
+      content="Official website of the IEEE Student Branch, Government Engineering College Palakkad. Explore our technical societies, events, executive committee, and achievements."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ieee.gecpkd.ac.in/images/og-cover.png"
+    />
+
+    <!-- ── Icons & Theme ──────────────────────────────────────────────── -->
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
+
+    <!-- ── Bootstrap ─────────────────────────────────────────────────── -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,13 +94,110 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IEEE SB GEC Palakkad Website</title>
   </head>
+
+  <!-- ── Splash Loader ── visible instantly, before any JS bundle loads ── -->
+  <style>
+    #splash-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      gap: 28px;
+      transition:
+        opacity 0.5s ease,
+        visibility 0.5s ease;
+    }
+    #splash-loader.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    /* Orbital rings */
+    .sl-rings {
+      position: relative;
+      width: 72px;
+      height: 72px;
+    }
+    .sl-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 3px solid transparent;
+    }
+    .sl-ring-1 {
+      border-top-color: #003366;
+      animation: sl-spin 1s linear infinite;
+    }
+    .sl-ring-2 {
+      inset: 10px;
+      border-top-color: #1a56a4;
+      animation: sl-spin 1.4s linear infinite reverse;
+    }
+    .sl-ring-3 {
+      inset: 20px;
+      border-top-color: #4a90d9;
+      animation: sl-spin 0.8s linear infinite;
+    }
+    @keyframes sl-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Wordmark */
+    .sl-wordmark {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      animation: sl-fadein 0.6s ease both;
+    }
+    .sl-title {
+      font-family: "Monument Extended Regular", "Segoe UI", sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      color: #003366;
+      text-transform: uppercase;
+    }
+    .sl-sub {
+      font-family: "Montserrat", "Segoe UI", sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      color: #64748b;
+      text-transform: uppercase;
+    }
+    @keyframes sl-fadein {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
   <body>
+    <!-- Splash screen — removed from DOM after React first paint -->
+    <div id="splash-loader" aria-hidden="true" aria-label="Loading">
+      <div class="sl-rings">
+        <div class="sl-ring sl-ring-1"></div>
+        <div class="sl-ring sl-ring-2"></div>
+        <div class="sl-ring sl-ring-3"></div>
+      </div>
+      <div class="sl-wordmark">
+        <span class="sl-title">IEEE SB</span>
+        <span class="sl-sub">GEC Palakkad</span>
+      </div>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
