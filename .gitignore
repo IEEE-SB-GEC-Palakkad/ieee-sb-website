@@ -22,5 +22,26 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.orig
 
+# Environments and Secrets
+.env
+.env.*
+!.env.example
+
+# Deployment and Build caches
 .vercel
+.cache
+.turbo
+.parcel-cache
+.eslintcache
+
+# Testing & Coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Temporary & OS files
+Thumbs.db
+[Ee]xpress/
+
