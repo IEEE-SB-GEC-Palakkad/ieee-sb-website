@@ -1,0 +1,15 @@
+# Installation
+> `npm install --save @types/youtube-player`
+
+# Summary
+This package contains type definitions for youtube-player (https://github.com/gajus/youtube-player#readme).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/youtube-player.
+
+### Additional Details
+ * Last updated: Mon, 20 Nov 2023 23:36:24 GMT
+ * Dependencies: none
+
+# Credits
+These definitions were written by [Martin Jurča](https://github.com/jurca).
