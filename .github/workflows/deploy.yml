@@ -21,6 +21,7 @@ concurrency:
 jobs:
   build:
     name: Build
+    if: github.repository == 'IEEE-SB-GEC-Palakkad/ieee-sb-website'
     runs-on: ubuntu-latest
 
     steps:
