@@ -15,6 +15,13 @@ mirror_git() {
     -c 'credential.https://github.com.helper=!gh auth git-credential' "$@"
 }
 
+publish_mirror() {
+  if ! mirror_git push mirror HEAD:refs/heads/main; then
+    echo '::error::Destination push failed. Check the Git error above and GH_IEEE_PAT permissions: destination Contents and Workflows must allow write access.'
+    exit 1
+  fi
+}
+
 # Use the PAT owner's GitHub identity so Vercel can identify the commit author.
 identity=$(GH_TOKEN="$GH_IEEE_PAT" gh api user --jq '[.id, .login] | @tsv')
 IFS=$'\t' read -r user_id user_login <<< "$identity"
@@ -53,23 +60,22 @@ for attempt in 1 2 3; do
   fi
 
   # Publish the source update, then a separate, genuinely empty deployment commit.
-  if ! mirror_git push mirror HEAD:refs/heads/main; then
-    echo "Destination main moved; retrying synchronization (attempt $attempt)."
-    continue
-  fi
+  publish_mirror
   git -c commit.gpgsign=false commit --allow-empty \
     -m 'chore(deploy): trigger Vercel deployment' \
     -m "Source-Repository: IEEE-SB-GEC-Palakkad/ieee-sb-website
 Source-Commit: $source_head"
   git diff --exit-code HEAD^ HEAD
-  if ! mirror_git push mirror HEAD:refs/heads/main; then
-    echo "Destination main moved; retrying synchronization (attempt $attempt)."
-    continue
-  fi
+  publish_mirror
 
   # GITHUB_TOKEN does not trigger another push workflow, preventing a sync loop.
   # Both repositories finish at the same commit, including the empty commit.
   if ! source_git push origin HEAD:refs/heads/main; then
+    source_git fetch --no-tags origin +refs/heads/main:refs/remotes/origin/main
+    if [[ "$(git rev-parse origin/main)" == "$source_head" ]]; then
+      echo '::error::Source push was rejected. GITHUB_TOKEN needs Contents: write and branch rules must permit the synchronization commit.'
+      exit 1
+    fi
     echo "Source main moved; retrying synchronization (attempt $attempt)."
     continue
   fi
