@@ -127,7 +127,7 @@
 }
 
 .achievements-container.expanded {
-  max-height: 2000px; /* Safe upper bound for achievements grid */
+  max-height: 6000px; /* Safe upper bound for achievements grid */
 }
 
 /* Gallery grid collapse heights */
