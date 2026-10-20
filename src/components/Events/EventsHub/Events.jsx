@@ -129,7 +129,7 @@ const EVENTS_DATA = [
     speaker: null,
     venue: "CS PG Seminar Hall",
     attendance: "42",
-    img: "/images/designverse.jpg"
+    img: "/images/designverse.png"
   },
   {
     name: "Spectrum Talk Session 1",
