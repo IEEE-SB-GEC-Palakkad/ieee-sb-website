@@ -5,6 +5,23 @@ import { Award, ChevronDown } from "lucide-react";
 // Standalone, easily-scalable array of achievements
 const ACHIEVEMENTS_DATA = [
   {
+    name: "IEEE SB Gec Palakkad",
+    details: ["Most Vibrant IEEE Student Branch in MSS 2026"],
+    img: "/images/achievements/ieee.png"
+  },
+  {
+    name: "Dr Vinita Chellappan",
+    details: [
+      "MGA Outstanding Branch Councilor and Branch Chapter Advisor 2024"
+    ],
+    img: "/images/achievements/Dr Vinita chellappan.png"
+  },
+  {
+    name: "Dr. Dhanya K M",
+    details: ["Outstanding SB Counselor Award MSS 2026"],
+    img: "/images/achievements/Dhanya k m.png"
+  },
+  {
     name: "Devika V R",
     details: [
       "Outstanding SB Chairperson Special Mention 2026 (Malabar Sub Section)",
@@ -17,7 +34,7 @@ const ACHIEVEMENTS_DATA = [
     details: [
       "Outstanding Student Volunteer Special Mention 2026 - (Malabar Sub Section)",
       "IEEE ComSoc Kerala Chapter SLT 2025 (Designer)",
-      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference"
+      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference 2026"
     ],
     img: "/images/achievements/adhil.png"
   },
@@ -44,7 +61,7 @@ const ACHIEVEMENTS_DATA = [
       "Outstanding Student Volunteer Fresher - Malabar Sub Section",
       "IEEE India Council SCT 2024",
       "IEEE EdSoc Intern",
-      "IEEE Xtreme Ambassador"
+      "IEEE Xtreme Ambassador 2024"
     ],
     img: "/images/achievements/meghna.png"
   },
@@ -52,7 +69,7 @@ const ACHIEVEMENTS_DATA = [
     name: "Greeshma",
     details: [
       "IEEE IA/IE/PELS Jt. Kerala Chapter SLT 2024 (Designer)",
-      "IEEE COMPUTE Graphics Designer"
+      "IEEE COMPUTE Graphics Designer 2024"
     ],
     img: "/images/achievements/greeshma.png"
   },
@@ -66,62 +83,52 @@ const ACHIEVEMENTS_DATA = [
   },
   {
     name: "Devika P Dinesh",
-    details: ["IEEE COMPUTE Graphic Designer"],
+    details: ["IEEE COMPUTE Graphic Designer 2024"],
     img: "/images/achievements/devikapdinesh.png"
   },
   {
     name: "Nayana G",
-    details: ["Selected as Xtreme Ambassador 19.0"],
-    img: null
+    details: ["Selected as Xtreme Ambassador 19.0 - 2025"],
+    img: "/images/achievements/NayanaG.png"
   },
   {
     name: "Mohammed Thamjeed",
-    details: ["VSB SAC Marketing Team"],
-    img: null
-  },
-  {
-    name: "Dr. Dhanya K M",
-    details: ["Outstanding SB Counselor Award MSS"],
-    img: null
-  },
-  {
-    name: "IEEE SB Gec Palakkad",
-    details: ["Most Vibrant IEEE Student Branch in MSS"],
-    img: null
+    details: ["VSB SAC Marketing Team 2025"],
+    img: "/images/achievements/Thamjeed.png"
   },
   {
     name: "Gauiri Shankar",
-    details: ["Computer Society Volunteer Team(Designer)"],
-    img: null
+    details: ["Computer Society Volunteer Team(Designer) 2026"],
+    img: "/images/achievements/Gauiri Shankar G Nair.png"
   },
   {
     name: "Adnan Rasheed",
-    details: ["HTB Project Coordinator"],
-    img: null
+    details: ["HTB Project Coordinator 2026"],
+    img: "/images/achievements/Adnan.png"
   },
   {
     name: "Fidha Fathima Kiliyamannil",
-    details: ["Malabar Hub Student Co-Representative"],
-    img: null
+    details: ["Malabar Hub Student Co-Representative 2026"],
+    img: "/images/achievements/Fidha.png"
   },
   {
     name: "Harikrishnan Rajesh",
-    details: ["Communication Lead for Procomm-Tems"],
-    img: null
+    details: ["Communication Lead for Procomm-Tems 2026"],
+    img: "/images/achievements/Harikrishnan.png"
   },
   {
     name: "Namiya Abdul Assiz",
     details: [
-      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference"
+      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference 2026"
     ],
-    img: null
+    img: "/images/achievements/Namiya Abdul Assiz.png"
   },
   {
     name: "Sneha R",
     details: [
-      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference"
+      "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference 2026"
     ],
-    img: null
+    img: "/images/achievements/Sneha R.png"
   }
 ];
 
