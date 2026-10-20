@@ -72,7 +72,7 @@ const ACHIEVEMENTS_DATA = [
   {
     name: "Nayana G",
     details: ["Selected as Xtreme Ambassador 19.0"],
-    img: null
+    img: "/images/achievements/NayanaG.png"
   },
   {
     name: "Mohammed Thamjeed",
@@ -82,7 +82,7 @@ const ACHIEVEMENTS_DATA = [
   {
     name: "Dr. Dhanya K M",
     details: ["Outstanding SB Counselor Award MSS"],
-    img: null
+    img: "/images/achievements/Dhanya k m.png"
   },
   {
     name: "IEEE SB Gec Palakkad",
@@ -92,29 +92,29 @@ const ACHIEVEMENTS_DATA = [
   {
     name: "Gauiri Shankar",
     details: ["Computer Society Volunteer Team(Designer)"],
-    img: null
+    img: "/images/achievements/Gauiri Shankar G Nair.png"
   },
   {
     name: "Adnan Rasheed",
     details: ["HTB Project Coordinator"],
-    img: null
+    img: "/images/achievements/Adnan.png"
   },
   {
     name: "Fidha Fathima Kiliyamannil",
     details: ["Malabar Hub Student Co-Representative"],
-    img: null
+    img: "/images/achievements/Fidha.png"
   },
   {
     name: "Harikrishnan Rajesh",
     details: ["Communication Lead for Procomm-Tems"],
-    img: null
+    img: "/images/achievements/Harikrishnan.png"
   },
   {
     name: "Namiya Abdul Assiz",
     details: [
       "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference"
     ],
-    img: null
+    img: "/images/achievements/Namiya Abdul Assiz.png"
   },
   {
     name: "Sneha R",
