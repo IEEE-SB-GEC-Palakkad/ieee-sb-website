@@ -5,6 +5,13 @@ import { Award, ChevronDown } from "lucide-react";
 // Standalone, easily-scalable array of achievements
 const ACHIEVEMENTS_DATA = [
   {
+    name: "Dr Vinita Chellappan",
+    details: [
+      "MGA Outstanding Branch Councilor and Branch Chapter Advisor"
+    ],
+    img: "/images/achievements/Dr Vinita chellappan.png"
+  },
+  {
     name: "Devika V R",
     details: [
       "Outstanding SB Chairperson Special Mention 2026 (Malabar Sub Section)",
@@ -77,7 +84,7 @@ const ACHIEVEMENTS_DATA = [
   {
     name: "Mohammed Thamjeed",
     details: ["VSB SAC Marketing Team"],
-    img: null
+    img: "/images/achievements/Thamjeed.png"
   },
   {
     name: "Dr. Dhanya K M",
@@ -87,7 +94,7 @@ const ACHIEVEMENTS_DATA = [
   {
     name: "IEEE SB Gec Palakkad",
     details: ["Most Vibrant IEEE Student Branch in MSS"],
-    img: null
+    img: "/images/achievements/ieee.png"
   },
   {
     name: "Gauiri Shankar",
@@ -121,7 +128,7 @@ const ACHIEVEMENTS_DATA = [
     details: [
       "Top 7 Worldwide – IEEE Sensors Council MYOSA 5.0; Invited to IEEE FLEPS Conference"
     ],
-    img: null
+    img: "/images/achievements/Sneha R.png"
   }
 ];
 
