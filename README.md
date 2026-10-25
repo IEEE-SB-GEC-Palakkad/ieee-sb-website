@@ -42,16 +42,6 @@ npm run build
 
 ---
 
-## Repository synchronization
-
-Push website changes to `main` in [IEEE-SB-GEC-Palakkad/ieee-sb-website](https://github.com/IEEE-SB-GEC-Palakkad/ieee-sb-website). The `Sync to IEEE-SB-GECPKD` workflow copies `main` to [IEEE-SB-GECPKD/ieee-sb-website](https://github.com/IEEE-SB-GECPKD/ieee-sb-website), then pushes a separate empty commit to trigger its Vercel integration. It copies that same commit back to the source using `GITHUB_TOKEN`, so both `main` branches have identical history without triggering another sync run. Pull before making your next change.
-
-The workflow uses `GH_IEEE_PAT` from the source repository's **AutoPush** environment. The PAT must belong to the GitHub account connected to Vercel and allow pushing contents and workflow files to the destination repository. For a classic PAT, this requires `repo` and `workflow` scopes; for a fine-grained PAT, grant destination repository **Contents: write** and **Workflows: write** permissions.
-
-Synchronization runs only in the source repository and can also be rerun manually from Actions on `main`. GitHub Pages runs only in the source; the destination uses Vercel. Independent destination code changes stop synchronization instead of being overwritten. Other branches and tags are not mirrored.
-
----
-
 ## 📂 Project Structure
 
 A clean, standardized folder hierarchy is maintained across the repository:
